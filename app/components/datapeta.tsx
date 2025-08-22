@@ -263,33 +263,28 @@ const PetaIndonesia = () => {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet"
       >
-        {Provinsi.map(
-          (region) => (
-            console.log(region),
-            (
-              <path
-                key={region.id}
-                d={region.pathData}
-                id={region.id}
-                className="cursor-pointer transition-colors duration-200 hover:fill-amber-400"
-                fill="#e5e7eb"
-                stroke="#374151"
-                strokeWidth={0.5}
-                onClick={() => router.push(`/provinsi/${region.id}`)}
-                onMouseMove={(e) => {
-                  setHovered({
-                    x: e.clientX,
-                    y: e.clientY,
-                    nama: region.nama,
-                  });
-                }}
-                onMouseLeave={() => setHovered(null)}
-              >
-                <title>{region.nama}</title>
-              </path>
-            )
-          )
-        )}
+        {Provinsi.map((region) => (
+          <path
+            key={region.id}
+            d={region.pathData}
+            id={region.id}
+            className="cursor-pointer transition-colors duration-200 hover:fill-amber-400"
+            fill="#e5e7eb"
+            stroke="#374151"
+            strokeWidth={0.5}
+            onClick={() => router.push(`/provinsi/${region.id}`)}
+            onMouseMove={(e) => {
+              setHovered({
+                x: e.clientX,
+                y: e.clientY,
+                nama: region.nama,
+              });
+            }}
+            onMouseLeave={() => setHovered(null)}
+          >
+            <title>{region.nama}</title>
+          </path>
+        ))}
       </svg>
     </div>
   );
