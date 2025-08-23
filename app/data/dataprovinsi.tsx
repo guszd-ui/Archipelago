@@ -4,6 +4,7 @@ export const DataProvinsi = [
   {
     id: "ID-AC",
     nama: "ACEH",
+    tarian: "",
     heroimg: "/images/provinsi/Aceh.png",
     deskripsi:
       'Aceh sebuah provinsi yang terletak di ujung barat Pulau Sumatera, memiliki kekayaan budaya dan tradisi yang unik dan mendalam. Dikenal dengan julukan "Serambi Mekkah," Aceh memiliki sejarah panjang yang erat kaitannya dengan Islam. Budaya dan tradisi di Aceh banyak dipengaruhi oleh ajaran agama Islam, yang terlihat jelas dalam kehidupan sehari-hari masyarakatnya',
@@ -649,6 +650,9 @@ export const DataProvinsi = [
   {
     id: "ID-PA",
     nama: "PAPUA",
+    kesenian: "/images/kesenian/TariPerang.jpg",
+    kerajinan: "/images/kerajinan/UkiranAsmat.jpg",
+    makanan: "/images/makanan/Papeda.jpg",
     heroimg: "/images/provinsi/Papua.png",
     deskripsi:
       "Papua adalah provinsi terluas di Indonesia, terletak di bagian barat Pulau Papua. Provinsi ini dikenal dengan kekayaan alamnya yang luar biasa, mulai dari pegunungan yang tertutup salju, hutan tropis lebat, hingga keanekaragaman flora dan fauna. Papua juga memiliki kebudayaan yang sangat beragam dari ratusan suku yang mendiaminya, seperti suku Dani, Asmat, dan Korowai.",

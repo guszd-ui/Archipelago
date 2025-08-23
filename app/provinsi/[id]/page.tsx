@@ -14,7 +14,7 @@ export default async function Provinsi({ params }: PageProps) {
   if (!data) return notFound();
 
   return (
-    <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen flex flex-col">
+    <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen flex flex-col scroll-smooth">
       <div className="w-screen h-auto flex justify-center">
         <h1 className="text-2xl font-bold text-black absolute rounded-sm bg-[rgb(238,238,238)] items-center p-4">
           Provinsi: {id} ({data.nama})
@@ -31,7 +31,7 @@ export default async function Provinsi({ params }: PageProps) {
         ></Image>
       </div>
       <div className="flex justify-center p-4 flex-col gap-5">
-        <div className="bg-[rgb(215,35,35)] rounded-md p-4 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
+        <div className="bg-[rgb(215,35,35)] rounded-md p-4 shadow-lg hover:scale-105 transition-transform duration-200 origin-bottom">
           <p className="mt-2 text-white">{data.deskripsi}</p>
         </div>
         <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
@@ -51,6 +51,15 @@ export default async function Provinsi({ params }: PageProps) {
           <div className="bg-white shadow-lg p-3 rounded-sm">
             <p className="text-black">{data.penjelasankesenian}</p>
           </div>
+          <div className="flex justify-center">
+            <Image
+              className="rounded-sm m-2 h-auto w-[60vh] items-center shadow-2xl outline-2 outline-blue-50 hover:scale-102 origin-bottom transition-transform duration-300"
+              alt={data.nama}
+              src={data.kesenian!}
+              width={1400}
+              height={800}
+            ></Image>
+          </div>
         </div>
         <div className="flex justify-between gap-10">
           <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
@@ -58,11 +67,27 @@ export default async function Provinsi({ params }: PageProps) {
             <div className="bg-white shadow-lg p-3 rounded-sm">
               <p className="text-black">{data.penjelasankerajinantangan}</p>
             </div>
+            <Image
+              className="rounded-sm h-96 w-96 items-center shadow-2xl outline-2 outline-blue-50 hover:scale-105 origin-bottom-left transition-transform duration-300"
+              alt={data.nama}
+              src={data.kerajinan!}
+              width={700}
+              height={400}
+            ></Image>
           </div>
           <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
             <p>{data.kulinerkhas}</p>
             <div className="bg-white shadow-lg p-3 rounded-sm">
               <p className="text-black">{data.penjelasankulinerkhas}</p>
+            </div>
+            <div className="flex justify-end">
+              <Image
+                className="rounded-sm h-96 w-96 items-center shadow-2xl outline-2 outline-blue-50 hover:scale-105 hover:justify-start origin-bottom-right transition-transform duration-300"
+                alt={data.nama}
+                src={data.makanan!}
+                width={700}
+                height={400}
+              ></Image>
             </div>
           </div>
         </div>
