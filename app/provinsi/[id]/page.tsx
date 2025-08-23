@@ -3,7 +3,7 @@ import { DataProvinsi } from "@/app/data/dataprovinsi";
 import Image from "next/image";
 
 interface PageProps {
- params: Promise<{ id: string }>;
+  params: Promise<{ id: string }>;
 }
 
 export default async function Provinsi({ params }: PageProps) {
@@ -14,17 +14,20 @@ export default async function Provinsi({ params }: PageProps) {
   if (!data) return notFound();
 
   return (
-    <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen">
-      <h1 className="text-2xl font-bold text-black">
-        Provinsi: {id} ({data.nama})
-      </h1>
-      <div className="flex justify-center">
+    <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen flex flex-col">
+      <div className="w-screen h-auto flex justify-center">
+        <h1 className="text-2xl font-bold text-black absolute rounded-sm bg-[rgb(238,238,238)] items-center p-4">
+          Provinsi: {id} ({data.nama})
+        </h1>
+      </div>
+
+      <div className="w-full h-auto flex justify-center">
         <Image
-          className="rounded-sm w-md h-auto"
+          className="rounded-sm w-5/6 h-5/6"
           alt={data.nama}
           src={data.heroimg}
-          width={300}
-          height={150}
+          width={3140}
+          height={2280}
         ></Image>
       </div>
       <div className="flex justify-center p-4 flex-col gap-5">
@@ -49,18 +52,21 @@ export default async function Provinsi({ params }: PageProps) {
             <p className="text-black">{data.penjelasankesenian}</p>
           </div>
         </div>
-        <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-          <p>{data.kerajinantangan}</p>
-          <div className="bg-white shadow-lg p-3 rounded-sm">
-            <p className="text-black">{data.penjelasankerajinantangan}</p>
+        <div className="flex justify-between gap-10">
+          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
+            <p>{data.kerajinantangan}</p>
+            <div className="bg-white shadow-lg p-3 rounded-sm">
+              <p className="text-black">{data.penjelasankerajinantangan}</p>
+            </div>
+          </div>
+          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
+            <p>{data.kulinerkhas}</p>
+            <div className="bg-white shadow-lg p-3 rounded-sm">
+              <p className="text-black">{data.penjelasankulinerkhas}</p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-          <p>{data.kulinerkhas}</p>
-          <div className="bg-white shadow-lg p-3 rounded-sm">
-            <p className="text-black">{data.penjelasankulinerkhas}</p>
-          </div>
-        </div>
+
         <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
           <p>{data.pakaianadat}</p>
           <div className="bg-white shadow-lg p-3 rounded-sm">
