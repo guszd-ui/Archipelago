@@ -649,7 +649,7 @@ export const DataProvinsi = [
   {
     id: "ID-PA",
     nama: "PAPUA",
-    heroimg: "/images/provinsi/papua.png",
+    heroimg: "/images/provinsi/Papua.png",
     deskripsi:
       "Papua adalah provinsi terluas di Indonesia, terletak di bagian barat Pulau Papua. Provinsi ini dikenal dengan kekayaan alamnya yang luar biasa, mulai dari pegunungan yang tertutup salju, hutan tropis lebat, hingga keanekaragaman flora dan fauna. Papua juga memiliki kebudayaan yang sangat beragam dari ratusan suku yang mendiaminya, seperti suku Dani, Asmat, dan Korowai.",
     juduldesk1: "Kehidupan Harmonis dengan Alam",
