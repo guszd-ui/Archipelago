@@ -3,9 +3,11 @@ import PetaIndonesia from "../components/datapeta";
 const BudayaDanTradisi = () => {
   return (
     <div className="w-screen h-auto flex justify-center items-start">
-      <div className="absolute items-center flex justify-center text-center bg-amber-300 rounded-sm p-4 m-30">
-        Untuk Pengguna Mobile Miringkan Layar Smartphone untuk mendapatkan
-        pengalaman Maksimal
+      <div className="text-center flex w-full justify-end absolute">
+        <p className="font-bold text-white p-2">
+          * Untuk Pengguna Mobile Miringkan Layar Smartphone untuk mendapatkan
+          pengalaman Maksimal *
+        </p>
       </div>
       <div className="">
         <PetaIndonesia />

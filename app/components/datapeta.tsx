@@ -243,7 +243,7 @@ const PetaIndonesia = () => {
   const router = useRouter();
 
   return (
-    <div className="border border-amber-400 w-screen h-screen bg-[url('/images/Lautan.png')] bg-center bg-cover">
+    <div className=" w-screen h-screen bg-[url('/images/Lautan.png')] bg-center bg-cover">
       {/* Tooltip */}
       {hovered && (
         <div
@@ -251,7 +251,7 @@ const PetaIndonesia = () => {
           style={{
             top: hovered.y,
             left: hovered.x,
-            transform: "translate(-50%, -120%)", // biar muncul di atas cursor
+            transform: "translate(-50%, -120%)",
           }}
         >
           {hovered.nama}
