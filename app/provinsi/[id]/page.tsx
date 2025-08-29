@@ -1,17 +1,30 @@
 import { notFound } from "next/navigation";
 import { DataProvinsi } from "@/app/data/dataprovinsi";
 import Image from "next/image";
+import { div } from "motion/react-client";
 
+// Fungsi ini memberitahu Next.js semua kemungkinan ID yang ada,
+// yang dapat menyelesaikan masalah build pada halaman dinamis.
+export async function generateStaticParams() {
+  return DataProvinsi.map((provinsi) => ({
+    id: provinsi.id,
+  }));
+}
+
+// Menggunakan kembali interface dan signature fungsi asli Anda.
 interface PageProps {
   params: Promise<{ id: string }>;
 }
 
 export default async function Provinsi({ params }: PageProps) {
+  // Menggunakan kembali cara Anda yang benar untuk mendapatkan id.
   const { id } = await params;
 
   const data = DataProvinsi.find((item) => item.id === id);
 
-  if (!data) return notFound();
+  if (!data) {
+    return notFound();
+  }
 
   return (
     <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen flex flex-col scroll-smooth">
@@ -28,7 +41,7 @@ export default async function Provinsi({ params }: PageProps) {
           src={data.heroimg}
           width={3140}
           height={2280}
-        ></Image>
+        />
       </div>
       <div className="flex justify-center p-4 flex-col gap-5">
         <div className="bg-[rgb(215,35,35)] rounded-md p-4 shadow-lg hover:scale-105 transition-transform duration-200 origin-bottom">
@@ -58,7 +71,7 @@ export default async function Provinsi({ params }: PageProps) {
               src={data.kesenian!}
               width={1400}
               height={800}
-            ></Image>
+            />
           </div>
         </div>
         <div className="flex justify-between gap-10">
@@ -73,7 +86,7 @@ export default async function Provinsi({ params }: PageProps) {
               src={data.kerajinan!}
               width={700}
               height={400}
-            ></Image>
+            />
           </div>
           <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
             <p className="font-bold">{data.kulinerkhas}</p>
@@ -87,7 +100,7 @@ export default async function Provinsi({ params }: PageProps) {
                 src={data.makanan!}
                 width={700}
                 height={400}
-              ></Image>
+              />
             </div>
           </div>
         </div>
@@ -104,7 +117,7 @@ export default async function Provinsi({ params }: PageProps) {
                 src={data.pakaian!}
                 width={1400}
                 height={800}
-              ></Image>
+              />
             </div>
           </div>
           <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
@@ -119,7 +132,7 @@ export default async function Provinsi({ params }: PageProps) {
                 src={data.upacara!}
                 width={1400}
                 height={800}
-              ></Image>
+              />
             </div>
           </div>
         </div>

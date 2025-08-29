@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const DataProvinsi = [
   {
     id: "ID-AC",
@@ -24,10 +22,10 @@ export const DataProvinsi = [
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
       "Kerawang Gayo: Motif tenun khas dari suku Gayo, Aceh Tengah. Motifnya terinspirasi dari alam dan memiliki makna filosofis yang mendalam.",
-    kulinerkhas: "Kulines Khas Aceh",
+    kulinerkhas: "Kuliner Khas Aceh",
     penjelasankulinerkhas:
       "Kopi Aceh: Kopi Aceh, terutama Kopi Gayo, terkenal dengan aroma dan cita rasa yang khas. Kedai-kedai kopi menjadi tempat favorit untuk bersosialisasi.",
-    pakaianadat: "Pakahian Adat Aceh",
+    pakaianadat: "Pakaian Adat Aceh",
     penjelasanpakaianadat:
       "Pakaian adat Aceh disebut Ulee Balang. Pakaian ini memiliki ciri khas berupa warna-warna cerah dan ornamen keemasan. Pakaian adat laki-laki terdiri dari baju lengan panjang, celana panjang, dan kain songket yang dililitkan di pinggang. Sedangkan pakaian adat perempuan terdiri dari kebaya atau baju kurung, rok panjang, dan perhiasan emas yang mewah.",
     upacaraadat: "Upacara Adat",
@@ -434,11 +432,11 @@ export const DataProvinsi = [
     id: "ID-KR",
     nama: "KEPULAUAN RIAU",
     heroimg: "/images/provinsi/KepulauanRiau.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_kepulauan_riau.png",
+    upacara: "/images/upacara/mandi_safar.png",
+    kerajinan: "/images/kerajinan/tudung_manto.png",
+    makanan: "/images/makanan/mie_lendir.png",
+    kesenian: "/images/kesenian/tari_zapin.png",
     deskripsi:
       "Kepulauan Riau adalah sebuah provinsi di Indonesia yang terdiri dari ribuan pulau kecil. Provinsi ini memiliki sejarah maritim yang kuat dan merupakan salah satu pusat kebudayaan Melayu di Nusantara. Lokasinya yang strategis di jalur pelayaran internasional membuat Kepulauan Riau memiliki perpaduan budaya yang kaya, dipengaruhi oleh suku Melayu, Orang Laut, dan Cina.",
     juduldesk1: "Kehidupan Bahari dan Jejak Sejarah",
@@ -467,11 +465,11 @@ export const DataProvinsi = [
     id: "ID-KS",
     nama: "KALIMANTAN SELATAN",
     heroimg: "/images/provinsi/KalimantanSelatan.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/baamar_galung_pancar_matahari.png",
+    upacara: "/images/upacara/mandi_bapintar.png",
+    kerajinan: "/images/kerajinan/kain_sasirangan.png",
+    makanan: "/images/makanan/soto_banjar.png",
+    kesenian: "/images/kesenian/tari_baksa_kembang.png",
     deskripsi:
       "Kalimantan Selatan adalah sebuah provinsi di bagian tenggara Pulau Kalimantan yang dikenal sebagai pusat kebudayaan suku Banjar. Provinsi ini memiliki kekayaan alam, terutama tambang batu bara dan hutan, serta identitas budaya yang kuat, terutama yang berkaitan dengan sungai-sungai besar dan pasar terapung.",
     juduldesk1: "Kehidupan Sungai dan Warisan Budaya Banjar",
@@ -500,11 +498,11 @@ export const DataProvinsi = [
     id: "ID-KT",
     nama: "KALIMANTAN TENGAH",
     heroimg: "/images/provinsi/KalimantanTengah.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_kalimantan_tengah.png",
+    upacara: "/images/upacara/upacara_tiwah.png",
+    kerajinan: "/images/kerajinan/kerajinan_getah_nyatu.png",
+    makanan: "/images/makanan/juhu_singkah.png",
+    kesenian: "/images/kesenian/tari_mandau.png",
     deskripsi:
       "Kalimantan Tengah adalah sebuah provinsi yang membentang di bagian tengah Pulau Kalimantan, dikenal dengan kekayaan alamnya berupa hutan tropis dan sungai-sungai besar. Provinsi ini merupakan pusat kebudayaan suku Dayak Ngaju, Ma'anyan, dan Bakumpai, yang memiliki tradisi dan ritual adat yang unik dan sakral.",
     juduldesk1: "Alam dan Budaya yang Menyatu",
@@ -533,11 +531,11 @@ export const DataProvinsi = [
     id: "ID-KU",
     nama: "KALIMANTAN UTARA",
     heroimg: "/images/provinsi/KalimantanUtara.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_kalimantan_utara.png",
+    upacara: "/images/upacara/pesta_adat_besoa.png",
+    kerajinan: "/images/kerajinan/kerajinan_anyaman_dayak.png",
+    makanan: "/images/makanan/udang_gala.png",
+    kesenian: "/images/kesenian/tari_jepen.png",
     deskripsi:
       "Kalimantan Utara adalah provinsi termuda di Indonesia, yang dimekarkan dari Kalimantan Timur. Provinsi ini memiliki kekayaan alam yang luar biasa, mulai dari hutan tropis yang lebat, sungai-sungai besar, hingga keindahan pesisir. Kalimantan Utara kaya akan budaya yang unik, terutama dari suku Dayak, Tidung, dan Bulungan.",
     juduldesk1: "Perbatasan dan Budaya Sungai",
@@ -548,7 +546,7 @@ export const DataProvinsi = [
       "Masyarakat Dayak di Kalimantan Utara memiliki adat istiadat yang kuat, salah satunya adalah tradisi `Lepo Dih` atau musyawarah adat. Nilai-nilai gotong royong, penghormatan terhadap alam, dan kekerabatan yang erat sangat dijunjung tinggi. Ritual-ritual adat sering dilakukan untuk memohon keselamatan dan hasil panen yang melimpah.",
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
-      "Tari Kancet Papatai: Tarian perang dari suku Dayak Kenyah. Tarian ini melambangkan keberanian dan kepahlawanan seorang pahlawan yang bertempur di medan perang. Gerakannya lincah dan enerjik, diiringi oleh musik dari alat musik tradisional `sape` dan gong.",
+      "Tari Jepen: Tarian pergaulan yang sangat kental dengan pengaruh budaya Melayu-Tidung di pesisir Kalimantan Utara. Tarian ini melambangkan kegembiraan dan keceriaan, dengan gerakan yang fokus pada langkah-langkah kaki yang ritmis dan dinamis. Tari Jepen sering ditampilkan dalam berbagai acara adat, seperti pernikahan dan festival budaya.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
       "Kerajinan Anyaman: Suku Dayak di Kalimantan Utara sangat terampil dalam membuat kerajinan anyaman dari rotan, bambu, dan pandan. Hasil kerajinannya berupa tas, topi, dan tikar dengan motif-motif khas yang indah dan penuh makna, yang mencerminkan kekayaan alam setempat.",
@@ -566,11 +564,11 @@ export const DataProvinsi = [
     id: "ID-LA",
     nama: "LAMPUNG",
     heroimg: "/images/provinsi/Lampung.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_lampung.png",
+    upacara: "/images/upacara/upacara_cakak_pepadun.png",
+    kerajinan: "/images/kerajinan/kain_tapis.png",
+    makanan: "/images/makanan/seruit.png",
+    kesenian: "/images/kesenian/tari_sembah.png",
     deskripsi:
       'Lampung adalah sebuah provinsi yang terletak di ujung selatan Pulau Sumatera. Dikenal sebagai "Gerbang Sumatera," provinsi ini memiliki keindahan alam yang beragam, mulai dari pesisir pantai, taman nasional, hingga dataran tinggi. Lampung kaya akan kebudayaan yang unik, merupakan perpaduan antara adat Lampung asli dan budaya dari suku-suku pendatang.',
     juduldesk1: "Perpaduan Budaya dan Gerbang Sumatera",
@@ -599,11 +597,11 @@ export const DataProvinsi = [
     id: "ID-MA",
     nama: "MALUKU",
     heroimg: "/images/provinsi/Maluku.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/baju_cele.png",
+    upacara: "/images/upacara/cuci_negeri_soya.png",
+    kerajinan: "/images/kerajinan/kerajinan_cengkeh.png",
+    makanan: "/images/makanan/papeda.png",
+    kesenian: "/images/kesenian/tari_lenso.png",
     deskripsi:
       'Maluku adalah sebuah provinsi kepulauan yang terletak di bagian timur Indonesia, terkenal sebagai salah satu "Spice Islands" di masa lalu. Provinsi ini memiliki kekayaan alam bawah laut yang menakjubkan, serta sejarah yang kaya sebagai pusat perdagangan rempah. Masyarakatnya terdiri dari beragam etnis yang hidup rukun, dengan tradisi yang kental dan unik.',
     juduldesk1: "Sejarah Rempah dan Kehidupan Bahari",
@@ -626,17 +624,17 @@ export const DataProvinsi = [
       'Pakaian adat Maluku adalah "Baju Cele" atau "Kebaya Hitam Putih". Pakaian ini terbuat dari kain tenun berwarna cerah dengan motif kotak-kotak. Wanita mengenakan kebaya yang dipadukan dengan sarung tenun, sementara pria mengenakan kemeja dan celana panjang dengan aksen tenun.',
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Upacara `Malam Baileo`: Ritual adat yang dilakukan di rumah adat `Baileo` untuk menyambut tamu atau merayakan suatu acara penting. Upacara ini melibatkan musik tradisional, tarian, dan jamuan makan, sebagai simbol penghormatan dan kebersamaan.",
+      "Upacara Cuci Negeri Soya: Sebuah ritual adat tahunan yang sakral di Desa Soya, Ambon. Tradisi ini bertujuan untuk membersihkan dan menyucikan negeri (desa) dari segala hal negatif, baik secara spiritual maupun jasmani. Prosesinya melibatkan pengambilan air suci dari puncak gunung dan ritual pembersihan di Baileo.",
   },
   {
     id: "ID-MU",
     nama: "MALUKU UTARA",
     heroimg: "/images/provinsi/MalukuUtara.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/baju_manteren_lamo.png",
+    upacara: "/images/upacara/upacara_kololi_kie.png",
+    kerajinan: "/images/kerajinan/tas_saloi.png",
+    makanan: "/images/makanan/ikan_gohu.png",
+    kesenian: "/images/kesenian/tari_soya_soya.png",
     deskripsi:
       'Maluku Utara adalah sebuah provinsi kepulauan di Indonesia yang kaya akan rempah-rempah, terutama cengkeh dan pala. Dikenal sebagai "The Spice Islands," provinsi ini memiliki sejarah panjang sebagai pusat perdagangan rempah dunia dan menjadi lokasi berdirinya kesultanan-kesultanan Islam tertua di Nusantara, seperti Kesultanan Ternate dan Tidore.',
     juduldesk1: "Pusat Sejarah dan Rempah Dunia",
@@ -650,7 +648,7 @@ export const DataProvinsi = [
       "Tari Soya-Soya: Tarian tradisional dari Tidore yang menggambarkan semangat perjuangan dan kepahlawanan. Tari ini ditarikan oleh sekelompok pria dengan gerakan yang dinamis dan enerjik, menggunakan properti berupa pedang dan perisai, melambangkan keberanian para prajurit.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Kerajinan Cengkeh dan Pala: Masyarakat Maluku Utara memiliki keahlian dalam mengolah rempah-rempah, terutama cengkeh dan pala, menjadi berbagai kerajinan tangan. Bunga cengkeh kering sering dirangkai menjadi hiasan yang indah dan beraroma harum, sementara biji pala diolah menjadi produk olahan lain.",
+      "Tas Saloi: Kerajinan anyaman khas Maluku Utara yang terbuat dari daun pandan atau rotan. Tas ini memiliki bentuk unik dan fungsional, sering digunakan masyarakat lokal untuk membawa hasil kebun atau keperluan sehari-hari. Motif anyaman yang rumit mencerminkan keahlian tangan pengrajin setempat.",
     kulinerkhas: "Kuliner Khas Maluku Utara",
     penjelasankulinerkhas:
       'Ikan Gohu: Hidangan ikan mentah khas Ternate, sering disebut sebagai "sashimi-nya Ternate." Ikan segar (biasanya tuna atau cakalang) dicincang, lalu direndam dalam perasan lemon dan dicampur dengan bumbu-bumbu seperti cabai, bawang merah, dan kemangi, memberikan rasa yang segar dan pedas.',
@@ -665,65 +663,31 @@ export const DataProvinsi = [
     id: "ID-NB",
     nama: "NUSA TENGGARA BARAT",
     heroimg: "/images/provinsi/NusaTenggaraBarat.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_lambung.png",
+    upacara: "/images/upacara/upacara_bau_nyale.png",
+    kerajinan: "/images/kerajinan/tenun_sukarara.png",
+    makanan: "/images/makanan/ayam_taliwang.png",
+    kesenian: "/images/kesenian/tari_gandrung_lombok.png",
     deskripsi:
-      "Nusa Tenggara Barat (NTB) adalah sebuah provinsi kepulauan di Indonesia yang terletak di bagian timur Pulau Bali. Provinsi ini terkenal dengan keindahan alamnya yang menakjubkan, terutama pantai-pantai berpasir putih, gunung berapi yang megah, dan kebudayaan yang kaya. NTB memiliki dua pulau besar, yaitu Lombok dan Sumbawa, yang masing-masing memiliki karakteristik unik.",
+      "Nusa Tenggara Barat (NTB) adalah provinsi kepulauan yang terdiri dari dua pulau utama, Lombok dan Sumbawa. Terkenal dengan keindahan alamnya yang memukau, mulai dari Gunung Rinjani, pantai-pantai eksotis, hingga Sirkuit Internasional Mandalika yang mendunia. Budaya masyarakatnya didominasi oleh Suku Sasak dan Bima, yang kaya akan tradisi dan kearifan lokal.",
     juduldesk1: "Perpaduan Keindahan Alam dan Budaya",
     penjelasan1:
-      "NTB menawarkan perpaduan sempurna antara petualangan alam dan eksplorasi budaya. Di Lombok, Anda dapat mendaki Gunung Rinjani, gunung berapi tertinggi kedua di Indonesia, atau bersantai di Gili Trawangan, Gili Meno, dan Gili Air yang terkenal. Sementara itu, Sumbawa menawarkan pesona alam yang lebih terpencil dan kebudayaan yang otentik.",
+      "NTB menawarkan perpaduan sempurna antara petualangan alam dan eksplorasi budaya. Di Lombok, Anda dapat mendaki Gunung Rinjani, bersantai di Gili Trawangan, atau menyaksikan ajang balap internasional di Mandalika. Sementara itu, Sumbawa menawarkan pesona alam yang lebih liar dan kebudayaan yang otentik, menjadikannya surga bagi para petualang.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
       "Masyarakat NTB, yang didominasi suku Sasak di Lombok dan suku Bima di Sumbawa, memiliki adat istiadat yang kuat. Nilai-nilai gotong royong, musyawarah, dan penghormatan terhadap alam serta leluhur masih dijunjung tinggi. Upacara adat sering kali diadakan untuk menjaga tradisi dan mempererat tali persaudaraan.",
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
-      "Tari Lenggok: Tarian tradisional dari Lombok yang menggambarkan keindahan dan keanggunan. Tarian ini biasanya ditarikan oleh wanita dan diiringi oleh musik gamelan.",
+      "Tari Gandrung Lombok: Tarian tradisional Suku Sasak yang ditarikan oleh penari wanita. Tarian ini melambangkan luapan kegembiraan dan rasa syukur. Penari akan mengajak penonton untuk ikut menari bersama dengan melemparkan kipas, menciptakan suasana yang meriah dan interaktif.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Tenun Ikat: NTB terkenal dengan kain tenunnya yang indah dan berwarna-warni. Tenun ikat dari Lombok dan Sumbawa memiliki motif khas yang terinspirasi dari alam dan kehidupan sehari-hari. Proses pembuatannya yang rumit dan teliti menjadikan setiap lembar kain memiliki nilai seni yang tinggi.",
+      "Tenun Khas NTB: Provinsi ini sangat terkenal dengan kain tenunnya yang indah, seperti Tenun Sukarara dari Lombok dan Tenun Bima dari Sumbawa. Setiap daerah memiliki motif khas yang terinspirasi dari alam dan kepercayaan lokal, ditenun secara turun-temurun dengan alat tenun tradisional.",
     kulinerkhas: "Kuliner Khas NTB",
     penjelasankulinerkhas:
       "Ayam Taliwang: Hidangan ayam bakar khas Lombok yang disajikan dengan bumbu pedas yang kaya rempah. Ayam Taliwang biasanya disajikan dengan plecing kangkung, hidangan kangkung dengan sambal pedas.",
     pakaianadat: "Pakaian Adat NTB",
     penjelasanpakaianadat:
-      "Pakaian adat suku Sasak di Lombok disebut Lambung. Pakaian ini memiliki ciri khas yang sederhana namun anggun, terbuat dari kain tenun berwarna cerah. Untuk wanita, pakaiannya berupa baju lengan pendek yang dikenakan bersama kain songket, sementara pria mengenakan baju jas hitam, celana, dan sapu tangan.",
-    upacaraadat: "Upacara Adat",
-    penjelasanupacaraadat:
-      'Bau Nyale: Upacara adat Suku Sasak yang diadakan setahun sekali di Pantai Seger, Lombok. Upacara ini dilakukan untuk menangkap cacing laut yang disebut "nyale" sebagai simbol kemakmuran dan keberuntungan. Legenda lokal mengatakan bahwa nyale adalah jelmaan Putri Mandalika.',
-  },
-
-  {
-    id: "ID-NB",
-    nama: "NUSA TENGGARA BARAT",
-    heroimg: "/images/provinsi/NusaTenggaraBarat.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
-    deskripsi:
-      "Nusa Tenggara Barat (NTB) adalah sebuah provinsi kepulauan di Indonesia yang terletak di bagian timur Pulau Jawa. Provinsi ini terkenal dengan keindahan alamnya yang menakjubkan, terutama pantai-pantai berpasir putih, gunung berapi yang megah, dan kebudayaan yang kaya. NTB memiliki dua pulau besar, yaitu Lombok dan Sumbawa, yang masing-masing memiliki karakteristik unik.",
-    juduldesk1: "Perpaduan Keindahan Alam dan Budaya",
-    penjelasan1:
-      "NTB menawarkan perpaduan sempurna antara petualangan alam dan eksplorasi budaya. Di Lombok, Anda dapat mendaki Gunung Rinjani, gunung berapi tertinggi kedua di Indonesia, atau bersantai di Gili Trawangan, Gili Meno, dan Gili Air yang terkenal. Sementara itu, Sumbawa menawarkan pesona alam yang lebih terpencil dan kebudayaan yang otentik.",
-    adatistiadat: "Adat Istiadat dan Nilai Lokal",
-    penjelasanadatistiadat:
-      "Masyarakat NTB, yang didominasi suku Sasak di Lombok dan suku Bima di Sumbawa, memiliki adat istiadat yang kuat. Nilai-nilai gotong royong, musyawarah, dan penghormatan terhadap alam serta leluhur masih dijunjung tinggi. Upacara adat sering kali diadakan untuk menjaga tradisi dan mempererat tali persaudaraan.",
-    keseniantradisional: "Kesenian Tradisional",
-    penjelasankesenian:
-      "Tari Lenggok: Tarian tradisional dari Lombok yang menggambarkan keindahan dan keanggunan. Tarian ini biasanya ditarikan oleh wanita dan diiringi oleh musik gamelan.",
-    kerajinantangan: "Kerajinan Tangan",
-    penjelasankerajinantangan:
-      "Tenun Ikat: NTB terkenal dengan kain tenunnya yang indah dan berwarna-warni. Tenun ikat dari Lombok dan Sumbawa memiliki motif khas yang terinspirasi dari alam dan kehidupan sehari-hari. Proses pembuatannya yang rumit dan teliti menjadikan setiap lembar kain memiliki nilai seni yang tinggi.",
-    kulinerkhas: "Kuliner Khas NTB",
-    penjelasankulinerkhas:
-      "Ayam Taliwang: Hidangan ayam bakar khas Lombok yang disajikan dengan bumbu pedas yang kaya rempah. Ayam Taliwang biasanya disajikan dengan plecing kangkung, hidangan kangkung dengan sambal pedas.",
-    pakaianadat: "Pakaian Adat NTB",
-    penjelasanpakaianadat:
-      "Pakaian adat suku Sasak di Lombok disebut Lambung. Pakaian ini memiliki ciri khas yang sederhana namun anggun, terbuat dari kain tenun berwarna cerah. Untuk wanita, pakaiannya berupa baju lengan pendek yang dikenakan bersama kain songket, sementara pria mengenakan baju jas hitam, celana, dan sapu tangan.",
+      "Pakaian adat Suku Sasak di Lombok untuk wanita disebut Baju Lambung, yang terdiri dari atasan hitam tanpa lengan dengan hiasan di leher, dipadukan dengan kain tenun. Pakaian pria disebut Pegon, yang merupakan perpaduan budaya Jawa dan Sasak, berupa jas hitam yang dikenakan dengan kain songket dan ikat kepala (sapuk).",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
       'Bau Nyale: Upacara adat Suku Sasak yang diadakan setahun sekali di Pantai Seger, Lombok. Upacara ini dilakukan untuk menangkap cacing laut yang disebut "nyale" sebagai simbol kemakmuran dan keberuntungan. Legenda lokal mengatakan bahwa nyale adalah jelmaan Putri Mandalika.',
@@ -732,13 +696,13 @@ export const DataProvinsi = [
     id: "ID-NT",
     nama: "NUSA TENGGARA TIMUR",
     heroimg: "/images/provinsi/NusaTenggaraTimur.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_ntt_rote.png",
+    upacara: "/images/upacara/upacara_pasola.png",
+    kerajinan: "/images/kerajinan/tenun_ikat_ntt.png",
+    makanan: "/images/makanan/sei_sapi.png",
+    kesenian: "/images/kesenian/tari_caci.png",
     deskripsi:
-      "Nusa Tenggara Timur (NTT) adalah sebuah provinsi kepulauan yang memiliki lebih dari 500 pulau, termasuk di antaranya Pulau Komodo, Flores, Sumba, dan Timor. Terkenal dengan keindahan alamnya yang eksotis, NTT juga kaya akan kebudayaan dan adat istiadat unik dari berbagai suku bangsa, seperti Manggarai, Sasak, dan Atoni.",
+      "Nusa Tenggara Timur (NTT) adalah provinsi kepulauan di tenggara Indonesia, mencakup pulau-pulau ikonik seperti Komodo, Flores, Sumba, dan Timor. Wilayah ini menjadi sorotan pariwisata dunia, terutama dengan ditetapkannya Labuan Bajo sebagai destinasi super prioritas. NTT adalah rumah bagi ratusan suku bangsa dengan budayanya yang unik, di antaranya suku Manggarai, Sumba, dan Atoni.",
     juduldesk1: "Keanekaragaman Alam dan Budaya",
     penjelasan1:
       "NTT menawarkan lanskap yang beragam, mulai dari savana kering yang luas, gunung berapi, hingga pantai-pantai dengan pasir berwarna unik seperti Pantai Pink di Pulau Komodo. Keanekaragaman ini tercermin pula dalam masyarakatnya, yang memiliki bahasa, tradisi, dan kesenian yang berbeda-beda di setiap pulau.",
@@ -750,7 +714,7 @@ export const DataProvinsi = [
       "Tari Caci: Kesenian tradisional dari Manggarai, Flores. Tari ini adalah ritual pertarungan antara dua laki-laki dengan cambuk dan perisai, yang melambangkan kejantanan, keberanian, dan kehormatan. Tarian ini diiringi oleh musik gong dan gendang, dan sering ditampilkan dalam upacara adat.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Tenun Ikat: Tenun ikat NTT sangat terkenal dengan motifnya yang khas dan warnanya yang berani. Setiap motif memiliki makna filosofis dan cerita tersendiri. Proses pembuatannya bisa memakan waktu berbulan-bulan, mencerminkan ketelitian dan kesabaran para penenun.",
+      "Tenun Ikat NTT: Provinsi ini adalah harta karun kain tenun ikat di Indonesia, dengan setiap pulau memiliki ciri khasnya sendiri. Tenun Sumba terkenal dengan motif figuratif (manusia dan hewan) yang sarat makna, sementara Tenun Flores memiliki ragam corak yang kaya. Proses pembuatannya yang rumit dan sakral menjadikan kain ini bernilai seni tinggi.",
     kulinerkhas: "Kuliner Khas NTT",
     penjelasankulinerkhas:
       "Se'i Sapi: Hidangan daging sapi asap khas Rote, NTT. Daging sapi diiris tipis, dibumbui, dan diasap dengan kayu khusus selama berjam-jam hingga matang. Se'i biasanya disajikan dengan nasi, sambal lu'at yang pedas, dan tumis bunga pepaya.",
@@ -764,50 +728,50 @@ export const DataProvinsi = [
   {
     id: "ID-PA",
     nama: "PAPUA",
-    kerajinan: "/images/kerajinan/UkiranAsmat.jpg",
+    kerajinan: "/images/kerajinan/lukisan_kulit_kayu_sentani.png",
     heroimg: "/images/provinsi/Papua.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_papua.png",
+    upacara: "/images/upacara/festival_danau_sentani.png",
+    makanan: "/images/makanan/papeda.png",
+    kesenian: "/images/kesenian/tari_yospan.png",
     deskripsi:
-      "Papua adalah provinsi terluas di Indonesia, terletak di bagian barat Pulau Papua. Provinsi ini dikenal dengan kekayaan alamnya yang luar biasa, mulai dari pegunungan yang tertutup salju, hutan tropis lebat, hingga keanekaragaman flora dan fauna. Papua juga memiliki kebudayaan yang sangat beragam dari ratusan suku yang mendiaminya, seperti suku Dani, Asmat, dan Korowai.",
+      "Papua adalah provinsi induk yang terletak di bagian utara Pulau Papua, dengan Jayapura sebagai ibu kotanya. Wilayah ini dikenal dengan Danau Sentani yang indah, lembah Mamberamo yang megah, dan kekayaan budaya dari suku-suku pesisir dan danau seperti Sentani, Tobati, dan Sarmi.",
     juduldesk1: "Kehidupan Harmonis dengan Alam",
     penjelasan1:
-      "Masyarakat Papua memiliki hubungan yang sangat erat dengan alam. Hutan, sungai, dan gunung dianggap sebagai sumber kehidupan dan memiliki nilai spiritual yang tinggi. Ketergantungan pada alam ini membentuk tradisi dan cara hidup yang unik, yang diturunkan dari generasi ke generasi.",
+      "Masyarakat Papua memiliki hubungan yang sangat erat dengan alam. Hutan, sungai, dan danau dianggap sebagai sumber kehidupan dan memiliki nilai spiritual yang tinggi. Ketergantungan pada alam ini membentuk tradisi dan cara hidup yang unik, yang diturunkan dari generasi ke generasi.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
-      'Sistem kekerabatan dan musyawarah sangat penting dalam masyarakat Papua. Konsep "Honai" tidak hanya merujuk pada rumah tradisional, tetapi juga melambangkan kebersamaan dan persatuan. Adat "bakar batu" adalah salah satu tradisi paling terkenal, melambangkan kebersamaan dan perdamaian di antara suku-suku.',
+      'Sistem kekerabatan dan musyawarah sangat penting dalam masyarakat Papua. Adat pembayaran mas kawin dengan manik-manik atau "doti" masih dilestarikan. Upacara-upacara adat sering diadakan untuk menghormati leluhur dan menjaga keseimbangan hubungan dengan alam.',
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
-      "Tari Perang: Tarian yang dilakukan oleh para pria, lengkap dengan hiasan kepala dari bulu burung kasuari dan panah. Tari ini melambangkan keberanian dan kekuatan, sering ditampilkan untuk menyambut tamu atau merayakan kemenangan.",
+      "Tari Yospan (Yosim Pancar): Tarian pergaulan yang sangat populer dan energik, melambangkan semangat persahabatan dan kebersamaan. Tarian ini merupakan gabungan dari dua tarian (Yosim dan Pancar) dan sering ditampilkan dalam berbagai perayaan dan penyambutan.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Ukiran Kayu Asmat: Suku Asmat dari Papua terkenal dengan seni ukirnya yang rumit dan artistik. Ukiran mereka sering menggambarkan roh-roh leluhur, alam, dan kisah-kisah mitologis. Setiap ukiran memiliki makna spiritual yang mendalam.",
+      "Lukisan Kulit Kayu Sentani: Kerajinan khas dari masyarakat di sekitar Danau Sentani. Kulit kayu dari pohon kombouw diolah menjadi kanvas, kemudian dilukis dengan motif-motif spiral dan geometris yang sarat akan makna filosofis tentang alam dan leluhur.",
     kulinerkhas: "Kuliner Khas Papua",
     penjelasankulinerkhas:
       "Papeda: Makanan pokok khas Papua yang terbuat dari sagu. Teksturnya kenyal seperti lem dan biasanya disajikan dengan ikan kuah kuning yang kaya rempah. Papeda adalah hidangan yang mencerminkan kekayaan hasil alam hutan Papua.",
     pakaianadat: "Pakaian Adat Papua",
     penjelasanpakaianadat:
-      "Pakaian adat Papua sering terbuat dari bahan-bahan alami seperti serat kulit kayu, daun, dan bulu burung. Pakaian pria berupa koteka, sementara wanita mengenakan rok rumbai dari serat sagu. Pakaian ini dilengkapi dengan hiasan-hiasan dari bulu, taring babi, atau manik-manik, yang menunjukkan status sosial pemakainya.",
+      "Pakaian adat di pesisir Papua, seperti di wilayah Sentani dan Sarmi, umumnya terdiri dari rok rumbai yang terbuat dari serat sagu atau daun-daunan. Pria dan wanita juga menghiasi tubuh mereka dengan lukisan tubuh (tato) dan mengenakan hiasan kepala yang terbuat dari bulu burung kasuari dan manik-manik.",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Bakar Batu: Upacara adat memasak bersama yang dilakukan dengan cara memanaskan batu di dalam lubang, lalu digunakan untuk memasak daging babi dan umbi-umbian. Upacara ini biasanya dilakukan untuk menyambut tamu penting, merayakan pernikahan, atau mengakhiri konflik.",
+      "Festival Danau Sentani: Sebuah festival budaya tahunan yang menampilkan berbagai ritual adat, tarian, dan musik dari suku-suku yang tinggal di sekitar Danau Sentani. Festival ini merupakan upacara syukuran atas alam yang melimpah sekaligus menjadi ajang pemersatu dan pelestarian budaya.",
   },
   {
     id: "ID-PB",
     nama: "PAPUA BARAT",
     heroimg: "/images/provinsi/PapuaBarat.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_ewer.png",
+    upacara: "/images/upacara/upacara_rumah_kaki_seribu.png",
+    kerajinan: "/images/kerajinan/noken.png",
+    makanan: "/images/makanan/ikan_bakar_manokwari.png",
+    kesenian: "/images/kesenian/tari_tumbu_tanah.png",
     deskripsi:
-      "Papua Barat adalah sebuah provinsi di ujung barat Pulau Papua, yang terkenal dengan keindahan alam bawah lautnya yang menakjubkan, terutama di Raja Ampat. Provinsi ini kaya akan keanekaragaman hayati dan memiliki tradisi serta budaya yang unik dari berbagai suku, seperti suku Arfak, Biak, dan Maibrat.",
-    juduldesk1: "Surga Keindahan Bahari",
+      "Papua Barat adalah provinsi di Semenanjung Kepala Burung Pulau Papua, dengan Manokwari sebagai ibukotanya. Wilayah ini dikenal sebagai jantung konservasi alam, dengan Cagar Alam Pegunungan Arfak dan Taman Nasional Teluk Cenderawasih. Budayanya sangat dipengaruhi oleh suku-suku asli seperti Arfak, Biak, dan Wamesa.",
+    juduldesk1: "Jantung Konservasi di Kepala Burung",
     penjelasan1:
-      'Papua Barat sering disebut sebagai "surga dunia" karena keindahan alamnya yang belum terjamah. Raja Ampat, yang merupakan gugusan pulau-pulau kecil, adalah salah satu situs penyelaman terbaik di dunia dengan terumbu karang yang sehat dan ribuan spesies ikan. Kehidupan masyarakatnya juga sangat terikat dengan laut, yang menjadi sumber utama mata pencaharian dan budaya.',
+      "Papua Barat adalah rumah bagi keanekaragaman hayati yang luar biasa. Pegunungan Arfak menjadi habitat bagi kupu-kupu dan burung-burung surga yang langka, sementara Taman Nasional Teluk Cenderawasih terkenal dengan hiu paus-nya. Kehidupan masyarakat adatnya sangat menyatu dengan alam, menjaga kearifan lokal dalam melestarikan lingkungan.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
       'Masyarakat Papua Barat memiliki sistem kekerabatan yang kuat. Adat "sasi" adalah salah satu tradisi penting yang mengatur pemanfaatan sumber daya alam, seperti hasil laut dan hutan. Aturan ini memastikan keberlanjutan lingkungan dan mencegah eksploitasi berlebihan, mencerminkan kearifan lokal yang mendalam.',
@@ -822,20 +786,20 @@ export const DataProvinsi = [
       "Ikan Bakar Manokwari: Makanan khas yang terkenal dari Manokwari. Ikan laut segar dibakar dengan bumbu sederhana, kemudian disajikan dengan sambal khas yang terbuat dari campuran cabai, tomat, dan rempah-rempah yang memberikan rasa pedas yang unik dan segar.",
     pakaianadat: "Pakaian Adat Papua Barat",
     penjelasanpakaianadat:
-      "Pakaian adat Papua Barat umumnya terbuat dari bahan alami seperti kulit kayu, serat sagu, dan bulu burung. Pakaian ini sering kali dihiasi dengan pernak-pernik alami seperti bulu kasuari, cangkang kerang, dan taring babi. Pakaian adat ini tidak hanya berfungsi sebagai penutup tubuh, tetapi juga menunjukkan identitas suku dan status sosial.",
+      "Pakaian Adat Ewer: Pakaian tradisional Papua Barat ini terbuat dari bahan-bahan alami. Untuk wanita, pakaiannya berupa rok rumbai yang terbuat dari serat sagu atau jerami kering. Pria mengenakan cawat dan hiasan kepala dari bulu burung kasuari. Pakaian ini melambangkan kedekatan masyarakat dengan alam dan kesederhanaan.",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Pesta Adat Bahari: Berbagai upacara adat yang berkaitan dengan laut, seperti upacara syukuran hasil tangkapan ikan atau peresmian perahu baru. Upacara ini biasanya dimeriahkan dengan tarian tradisional dan jamuan makan bersama, sebagai bentuk rasa syukur kepada Tuhan dan laut yang telah memberikan rezeki.",
+      "Upacara Adat Rumah Kaki Seribu: Suku Arfak memiliki ritual adat yang sakral saat mendirikan atau mengganti atap `Mod Aki Aksa` (Rumah Kaki Seribu). Upacara ini melibatkan seluruh komunitas, diiringi oleh Tari Tumbu Tanah, dan menjadi simbol gotong royong, persatuan, serta penghormatan kepada leluhur.",
   },
   {
     id: "ID-RI",
     nama: "RIAU",
     heroimg: "/images/provinsi/Riau.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_riau.png",
+    upacara: "/images/upacara/upacara_balimau_kasai.png",
+    kerajinan: "/images/kerajinan/tenun_siak.png",
+    makanan: "/images/makanan/bolu_kemojo.png",
+    kesenian: "/images/kesenian/tari_zapin_riau.png",
     deskripsi:
       "Riau adalah sebuah provinsi di bagian tengah Pulau Sumatera yang kaya akan sumber daya alam, seperti minyak bumi dan perkebunan. Provinsi ini memiliki kekayaan budaya Melayu yang kental, yang tercermin dalam seni, adat istiadat, dan kehidupan sehari-hari masyarakatnya. Riau juga dikenal dengan keindahan alamnya, mulai dari hutan yang luas hingga perairan pesisir.",
     juduldesk1: "Pusat Kebudayaan Melayu yang Kuat",
@@ -852,7 +816,7 @@ export const DataProvinsi = [
       "Tenun Siak: Kerajinan kain tenun khas dari Siak, Riau. Kain ini memiliki motif yang kaya dan warna yang cerah, sering kali terinspirasi dari flora dan fauna lokal. Tenun Siak sering digunakan dalam upacara adat dan acara penting.",
     kulinerkhas: "Kuliner Khas Riau",
     penjelasankulinerkhas:
-      "Gulai Ikan Patin: Hidangan gulai yang menggunakan ikan patin sebagai bahan utama. Kuahnya kental dan kaya rempah, dengan cita rasa pedas dan gurih. Gulai Ikan Patin sering disajikan dengan nasi hangat dan menjadi hidangan favorit masyarakat lokal.",
+      "Bolu Kemojo: Kue khas Riau yang memiliki bentuk unik menyerupai bunga kemboja. Bolu ini terbuat dari tepung terigu, santan, telur, dan sari daun pandan atau suji yang memberikan warna hijau dan aroma yang khas. Teksturnya yang padat namun lembut menjadikannya oleh-oleh populer dari Riau.",
     pakaianadat: "Pakaian Adat Riau",
     penjelasanpakaianadat:
       'Pakaian adat Riau disebut "Pakaian Teluk Belanga" untuk pria dan "Baju Kebaya Labuh" untuk wanita. Pakaian ini terbuat dari kain sutra atau satin dengan warna cerah, dan sering dihiasi dengan sulaman benang emas. Pakaian adat ini mencerminkan keanggunan dan kesopanan dalam budaya Melayu.',
@@ -864,16 +828,16 @@ export const DataProvinsi = [
     id: "ID-SA",
     nama: "SULAWESI UTARA",
     heroimg: "/images/provinsi/SulawesiUtara.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/kawasaran.png",
+    upacara: "/images/upacara/upacara_tulude.png",
+    kerajinan: "/images/kerajinan/kerajinan_bambu_minahasa.png",
+    makanan: "/images/makanan/tinutuan.png",
+    kesenian: "/images/kesenian/tari_maengket.png",
     deskripsi:
-      "Sulawesi Utara adalah provinsi yang terletak di ujung utara Pulau Sulawesi. Dikenal dengan keindahan alam bawah lautnya yang menakjubkan, terutama di Taman Nasional Bunaken, provinsi ini memiliki kebudayaan yang kaya dan dipengaruhi oleh suku-suku seperti Minahasa, Sangir, dan Bolaang Mongondow. Wilayah ini juga menjadi salah satu pusat penyebaran agama Kristen di Indonesia.",
+      "Sulawesi Utara adalah provinsi di ujung utara Pulau Sulawesi. Dikenal dengan keindahan Taman Nasional Bunaken dan KEK Pariwisata Super Prioritas Likupang, provinsi ini memiliki kebudayaan yang kaya dari suku Minahasa, Sangir, dan Bolaang Mongondow. Wilayah ini juga merupakan salah satu pusat penyebaran agama Kristen di Indonesia.",
     juduldesk1: "Kekayaan Bahari dan Adat yang Erat",
     penjelasan1:
-      "Sulawesi Utara menawarkan perpaduan antara keindahan alam dan kehidupan sosial yang harmonis. Keindahan lautnya, terutama di Bunaken, menjadikannya destinasi wisata internasional. Di daratan, masyarakatnya hidup dengan menjunjung tinggi nilai-nilai adat yang diwariskan oleh para leluhur.",
+      "Sulawesi Utara menawarkan perpaduan antara keindahan alam dan kehidupan sosial yang harmonis. Keindahan lautnya, terutama di Bunaken dan Likupang, menjadikannya destinasi wisata internasional. Di daratan, masyarakatnya hidup dengan menjunjung tinggi nilai-nilai adat yang diwariskan oleh para leluhur.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
       'Suku Minahasa memiliki adat istiadat yang kuat, salah satunya adalah "Mapalus" atau gotong royong. Tradisi ini menunjukkan semangat kebersamaan dan saling membantu dalam berbagai kegiatan, baik di bidang pertanian maupun dalam upacara-upacara adat. Nilai-nilai kekeluargaan sangat diutamakan dalam kehidupan sehari-hari.',
@@ -888,20 +852,20 @@ export const DataProvinsi = [
       "Tinutuan (Bubur Manado): Bubur sayur khas Manado yang terbuat dari campuran labu kuning, singkong, ubi, jagung, dan berbagai macam sayuran hijau. Tinutuan biasanya disajikan dengan ikan asin, sambal roa, dan perkedel jagung.",
     pakaianadat: "Pakaian Adat Sulawesi Utara",
     penjelasanpakaianadat:
-      'Pakaian adat Sulawesi Utara dikenal dengan "Baju Kawasaran" untuk pria dan "Baju Salu" untuk wanita. Pakaian pria terbuat dari kain tenun berwarna cerah dengan hiasan bulu dan taring babi hutan, sementara pakaian wanita berupa kebaya yang dihiasi dengan perhiasan emas. Pakaian ini mencerminkan keberanian dan keanggunan.',
+      "Pakaian adat yang paling ikonik dari Sulawesi Utara adalah Kostum Tari Perang Kawasaran dari suku Minahasa. Pakaian ini didominasi warna merah, terbuat dari kain tenun, dan dihiasi dengan tengkorak monyet, paruh burung enggang, serta bulu-bulu unggas. Pakaian ini melambangkan keberanian dan kegagahan para prajurit Minahasa.",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Upacara Kasada: Upacara adat suku Tengger yang berdiam di sekitar Gunung Bromo. Upacara ini dilakukan untuk memberikan sesajen kepada dewa-dewa di kawah gunung. Meskipun suku Tengger berlokasi di Jawa Timur, pengaruh budaya dan sejarahnya beririsan dengan beberapa kelompok di Sulawesi Utara.",
+      "Upacara Adat Tulude: Ritual tahunan masyarakat suku Sangihe Talaud yang digelar sebagai ucapan syukur atas berkat sepanjang tahun yang lalu dan permohonan berkah di tahun yang baru. Upacara ini dimeriahkan dengan pemotongan kue `tamo`, tarian, dan musik tradisional sebagai simbol persatuan dan kebersamaan.",
   },
   {
     id: "ID-SB",
     nama: "SUMATERA BARAT",
     heroimg: "/images/provinsi/SumateraBarat.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_bundo_kanduang.png",
+    upacara: "/images/upacara/upacara_tabuik.png",
+    kerajinan: "/images/kerajinan/tenun_pandai_sikek.png",
+    makanan: "/images/makanan/rendang.png",
+    kesenian: "/images/kesenian/tari_piring.png",
     deskripsi:
       "Sumatera Barat adalah sebuah provinsi di pesisir barat Pulau Sumatera yang dikenal sebagai tanah kelahiran suku Minangkabau. Provinsi ini memiliki lanskap yang menawan dengan pegunungan, danau, dan lembah yang subur. Kebudayaan Minangkabau yang unik dengan sistem kekerabatan matrilineal dan arsitektur rumah gadang menjadi daya tarik utama provinsi ini.",
     juduldesk1: "Kekayaan Budaya Matrilineal",
@@ -930,13 +894,13 @@ export const DataProvinsi = [
     id: "ID-SG",
     nama: "SULAWESI TENGGARA",
     heroimg: "/images/provinsi/SulawesiTenggara.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_buton.png",
+    upacara: "/images/upacara/upacara_pekande_kandea.png",
+    kerajinan: "/images/kerajinan/tenun_buton.png",
+    makanan: "/images/makanan/sinonggi.png",
+    kesenian: "/images/kesenian/tari_lariangi.png",
     deskripsi:
-      "Sulawesi Tenggara adalah sebuah provinsi di bagian tenggara Pulau Sulawesi yang dikenal dengan keindahan alam pesisir dan kepulauannya, termasuk Wakatobi yang merupakan surga bagi para penyelam. Provinsi ini kaya akan budaya yang unik dari berbagai suku, seperti suku Tolaki, Muna, dan Buton, yang memiliki sejarah panjang sebagai kerajaan maritim.",
+      "Sulawesi Tenggara adalah provinsi di bagian tenggara Pulau Sulawesi yang dikenal dengan keindahan kepulauannya, termasuk Wakatobi yang telah ditetapkan sebagai Cagar Biosfer UNESCO. Selain potensi bahari, provinsi ini juga merupakan salah satu penghasil nikel terbesar di Indonesia. Budayanya kaya dan unik dari berbagai suku, seperti Tolaki, Muna, dan Buton.",
     juduldesk1: "Kehidupan Maritim dan Kerajaan Kuno",
     penjelasan1:
       "Sejarah Sulawesi Tenggara erat kaitannya dengan kerajaan-kerajaan maritim seperti Kesultanan Buton. Laut memiliki peran sentral dalam kehidupan masyarakat, baik sebagai sumber penghidupan maupun jalur perdagangan. Tradisi bahari masih sangat kental dan tercermin dalam berbagai upacara adat serta kesenian.",
@@ -954,7 +918,7 @@ export const DataProvinsi = [
       "Sinonggi: Makanan pokok khas suku Tolaki yang terbuat dari sagu. Teksturnya kenyal dan lengket, mirip dengan papeda dari Papua. Sinonggi biasanya disantap dengan ikan bakar, sayur, dan kuah kuning pedas yang kaya rempah.",
     pakaianadat: "Pakaian Adat Sulawesi Tenggara",
     penjelasanpakaianadat:
-      'Pakaian adat Sulawesi Tenggara sangat bervariasi. Pakaian adat suku Buton, misalnya, dikenal dengan "Baju Labuh" untuk pria dan "Baju Bodo" untuk wanita. Pakaian ini terbuat dari kain tenun dengan sulaman emas yang mewah, melambangkan kebesaran dan kekayaan budaya.',
+      "Pakaian adat Suku Buton untuk wanita adalah Kombowa, yang terdiri dari atasan dengan hiasan khas dan sarung tenun Buton. Pria mengenakan baju atasan, celana panjang, sarung yang dililitkan di pinggang, dan kampurui (ikat kepala). Pakaian ini mencerminkan kebesaran Kesultanan Buton di masa lalu.",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
       "Pekande-kandea: Tradisi suku Muna yang berupa ritual makan bersama sebagai bentuk syukuran. Upacara ini dilakukan untuk merayakan hasil panen yang melimpah, pernikahan, atau untuk menyambut tamu kehormatan. Hidangan disajikan dengan tata cara khusus dan dimakan bersama-sama sebagai simbol kebersamaan.",
@@ -963,13 +927,13 @@ export const DataProvinsi = [
     id: "ID-SN",
     nama: "SULAWESI SELATAN",
     heroimg: "/images/provinsi/SulawesiSelatan.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/baju_bodo.png",
+    upacara: "/images/upacara/upacara_rambu_solo.png",
+    kerajinan: "/images/kerajinan/tenun_sutra_sengkang.png",
+    makanan: "/images/makanan/coto_makassar.png",
+    kesenian: "/images/kesenian/tari_pakarena.png",
     deskripsi:
-      "Sulawesi Selatan adalah provinsi yang terletak di jazirah selatan Pulau Sulawesi, dikenal sebagai pusat kebudayaan dari suku Bugis, Makassar, dan Toraja. Provinsi ini memiliki sejarah maritim yang panjang dan kekayaan alam yang beragam, mulai dari pegunungan hingga garis pantai yang indah.",
+      "Sulawesi Selatan adalah provinsi di jazirah selatan Pulau Sulawesi, dikenal sebagai pusat kebudayaan suku Bugis, Makassar, dan Toraja. Wilayah ini memiliki sejarah maritim yang kuat, kekayaan alam berupa gugusan karst di Geopark Maros-Pangkep yang diakui UNESCO, hingga dataran tinggi yang megah.",
     juduldesk1: "Sejarah Maritim yang Kuat",
     penjelasan1:
       "Suku Bugis dan Makassar dikenal sebagai pelaut ulung yang telah mengarungi lautan jauh. Perahu pinisi, kapal tradisional khas Sulawesi Selatan, menjadi simbol keberanian dan ketangguhan. Sejarah perdagangan dan penjelajahan laut yang kuat ini membentuk identitas budaya yang unik dan dinamis.",
@@ -981,13 +945,13 @@ export const DataProvinsi = [
       "Tari Pakarena: Tarian tradisional dari Makassar yang ditarikan oleh para wanita dengan gerakan tangan yang lembut dan gemulai. Gerakan ini melambangkan keanggunan dan keindahan perempuan Makassar. Tarian ini diiringi oleh alat musik tradisional seperti gendang dan suling.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Sarung Tenun: Sarung tenun Bugis dan Makassar terkenal dengan motifnya yang geometris dan warna yang cerah. Sarung ini terbuat dari sutra dan digunakan dalam berbagai upacara adat serta sebagai pakaian sehari-hari.",
+      "Tenun Sutra Sengkang: Sulawesi Selatan, khususnya dari daerah Sengkang (Kabupaten Wajo), terkenal sebagai pusat tenun sutra Bugis. Kain tenun sutra ini memiliki motif khas seperti `cobba` dan `balo renni` dengan warna-warna yang cerah dan kontras, mencerminkan kekayaan budaya dan kemahiran para penenunnya.",
     kulinerkhas: "Kuliner Khas Sulawesi Selatan",
     penjelasankulinerkhas:
       "Coto Makassar: Sup daging sapi yang kaya rempah, terbuat dari jeroan sapi yang direbus dalam bumbu kacang dan rempah-rempah. Coto Makassar biasanya disajikan dengan ketupat atau buras, dan menjadi hidangan yang sangat digemari di seluruh Indonesia.",
     pakaianadat: "Pakaian Adat Sulawesi Selatan",
     penjelasanpakaianadat:
-      'Pakaian adat Bugis-Makassar adalah "Baju Bodo" untuk wanita. Baju ini berupa atasan longgar dengan lengan pendek yang terbuat dari kain sutra. Baju Bodo sering dipadukan dengan sarung sutra. Pakaian ini mencerminkan keanggunan dan kesopanan wanita Sulawesi Selatan.',
+      "Pakaian adat Bugis-Makassar untuk wanita adalah Baju Bodo, salah satu busana tertua di dunia yang berupa atasan longgar dari kain sutra tipis. Untuk pria, pakaian adatnya adalah Baju Bella Dada, berupa jas lengan panjang yang dipadukan dengan sarung (`lipa sabbe`) dan hiasan kepala (`passapu`).",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
       "Rambu Solo: Upacara kematian suku Toraja yang sangat terkenal. Upacara ini dilakukan untuk mengantarkan arwah orang yang meninggal ke alam baka dan biasanya berlangsung selama berhari-hari. Acara ini melibatkan pengorbanan hewan dan pertunjukan seni, menunjukkan betapa pentingnya kehidupan setelah mati bagi masyarakat Toraja.",
@@ -996,31 +960,31 @@ export const DataProvinsi = [
     id: "ID-SR",
     nama: "SULAWESI BARAT",
     heroimg: "/images/provinsi/SulawesiBarat.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_mandar.png",
+    upacara: "/images/upacara/upacara_sayyang_pattudu.png",
+    kerajinan: "/images/kerajinan/tenun_sutra_mandar.png",
+    makanan: "/images/makanan/jepa.png",
+    kesenian: "/images/kesenian/tari_pattudu.png",
     deskripsi:
-      "Sulawesi Barat adalah sebuah provinsi di bagian barat Pulau Sulawesi yang baru dimekarkan. Provinsi ini memiliki kekayaan alam yang melimpah, mulai dari perbukitan, pegunungan, hingga keindahan pesisir pantai. Masyarakatnya terdiri dari berbagai suku, seperti Mandar, Bugis, dan Toraja, yang hidup rukun dengan adat dan tradisi yang kaya.",
+      "Sulawesi Barat adalah sebuah provinsi di bagian barat Pulau Sulawesi yang merupakan rumah bagi Suku Mandar yang dikenal sebagai pelaut ulung. Provinsi ini memiliki kekayaan alam yang melimpah, dari pegunungan hingga pesisir pantai, serta tradisi budaya maritim yang kuat.",
     juduldesk1: "Harmoni Budaya Pesisir dan Pegunungan",
     penjelasan1:
-      "Masyarakat Sulawesi Barat mencerminkan perpaduan unik antara budaya bahari pesisir dan tradisi agraris pegunungan. Suku Mandar, yang mendominasi wilayah pesisir, dikenal sebagai pelaut handal, sementara suku-suku lain yang tinggal di pedalaman memiliki kearifan lokal yang kuat terkait pertanian dan kehutanan.",
+      "Masyarakat Sulawesi Barat mencerminkan perpaduan unik antara budaya bahari pesisir dan tradisi agraris pegunungan. Suku Mandar, yang mendominasi wilayah pesisir, dikenal sebagai pelaut handal dengan perahu Sandeq-nya, sementara suku-suku lain di pedalaman memiliki kearifan lokal terkait pertanian.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
-      'Suku Mandar memiliki adat istiadat yang dikenal dengan "Sillu Tappu", yaitu tradisi gotong royong dalam membangun perahu sandeq. Tradisi ini tidak hanya sebagai cara kerja, tetapi juga mempererat tali persaudaraan. Nilai-nilai musyawarah dan saling menghormati sangat dijunjung tinggi dalam kehidupan sehari-hari.',
+      "Adat istiadat Suku Mandar berlandaskan pada filosofi `Appeq Lembang` (Empat Pilar Kepemimpinan), yang mengatur keseimbangan antara pemimpin, adat, agama, dan rakyat. Nilai `assossorang` (persatuan) dan musyawarah sangat dijunjung tinggi dalam kehidupan.",
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
       "Tari Pattudu: Tarian tradisional dari suku Mandar. Tarian ini biasanya ditarikan oleh sekelompok wanita dengan gerakan yang indah dan dinamis. Tari Pattudu sering ditampilkan dalam acara pernikahan atau perayaan panen, melambangkan kegembiraan dan rasa syukur.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Tenun Ikat Mandar: Kain tenun khas suku Mandar yang terkenal dengan motifnya yang unik, seperti motif `sarung sutra`. Tenun ini dibuat dengan teknik tradisional dan sering digunakan dalam upacara adat serta sebagai pakaian sehari-hari.",
+      "Tenun Sutra Mandar (Lipa Saqbe): Kerajinan kain sarung sutra khas Suku Mandar. Kain ini terkenal dengan motif `sureq` (corak) kotak-kotak atau garis geometris dengan warna-warna cerah. `Lipa Saqbe` tidak hanya digunakan sebagai pakaian, tetapi juga sebagai simbol status dan mahar dalam pernikahan.",
     kulinerkhas: "Kuliner Khas Sulawesi Barat",
     penjelasankulinerkhas:
       "Jepa: Makanan pokok khas Mandar yang terbuat dari singkong. Jepa biasanya disajikan dalam bentuk lembaran pipih yang dimasak di atas wajan tanah liat, dan disantap dengan ikan bakar atau sayuran.",
     pakaianadat: "Pakaian Adat Sulawesi Barat",
     penjelasanpakaianadat:
-      'Pakaian adat Sulawesi Barat terinspirasi dari pakaian adat suku Mandar. Pakaian pria berupa "Baju Pokko" yang dipadukan dengan celana panjang dan sarung. Sementara itu, pakaian wanita disebut "Baju Bodo" yang terbuat dari kain tenun dengan motif khas dan dihiasi dengan perhiasan emas.',
+      "Pakaian adat Suku Mandar untuk wanita adalah Baju Pokko, atasan lengan pendek dengan hiasan khas, yang dipadukan dengan sarung tenun sutra Mandar (`Lipa Saqbe`). Pria mengenakan jas tertutup yang dipadukan dengan celana, `Lipa Saqbe` yang dililitkan di pinggang, dan `passapu` (ikat kepala).",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
       "Sayyang Pattudu: Tradisi unik yang dilakukan oleh suku Mandar, yaitu mengarak kuda yang dihias dengan pernak-pernik dan diiringi musik tradisional. Acara ini biasanya dilakukan untuk merayakan khitanan atau pernikahan, sebagai simbol kemeriahan dan kegembiraan.",
@@ -1029,11 +993,11 @@ export const DataProvinsi = [
     id: "ID-SS",
     nama: "SUMATERA SELATAN",
     heroimg: "/images/provinsi/SumateraSelatan.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_aesan_gede.png",
+    upacara: "/images/upacara/perlombaan_perahu_bidar.png",
+    kerajinan: "/images/kerajinan/kain_songket_palembang.png",
+    makanan: "/images/makanan/pempek.png",
+    kesenian: "/images/kesenian/tari_tanggai.png",
     deskripsi:
       "Sumatera Selatan adalah sebuah provinsi di bagian selatan Pulau Sumatera yang dikenal dengan ibu kotanya, Palembang. Provinsi ini memiliki sejarah panjang sebagai pusat Kerajaan Sriwijaya, salah satu kerajaan maritim terbesar di Asia Tenggara. Kekayaan sejarah dan budaya Melayu yang kental tercermin dalam berbagai aspek kehidupan masyarakatnya, terutama yang berkaitan dengan Sungai Musi.",
     juduldesk1: "Peninggalan Sejarah dan Kerajaan Sriwijaya",
@@ -1053,20 +1017,20 @@ export const DataProvinsi = [
       "Pempek: Makanan khas Palembang yang terbuat dari olahan ikan yang dicampur tepung sagu. Pempek biasanya disajikan dengan kuah cuka yang rasanya asam, manis, dan pedas. Pempek menjadi salah satu kuliner ikonik yang sangat digemari di seluruh Indonesia.",
     pakaianadat: "Pakaian Adat Sumatera Selatan",
     penjelasanpakaianadat:
-      'Pakaian adat Sumatera Selatan untuk wanita adalah "Aesan Gede" yang melambangkan kebesaran Kerajaan Sriwijaya. Pakaian ini terbuat dari songket berwarna merah dengan sulaman benang emas, dilengkapi dengan perhiasan emas yang mewah dan hiasan kepala yang megah. Pakaian pria juga terbuat dari songket yang dipadukan dengan celana dan selendang.',
-    upacaraadat: "Upacara Adat",
+      "Pakaian adat Sumatera Selatan yang paling megah adalah Aesan Gede, yang melambangkan kebesaran Kerajaan Sriwijaya. Pakaian pengantin wanita terdiri dari songket, dodot, dan berbagai perhiasan emas yang rumit, dengan hiasan kepala yang khas. Pengantin pria mengenakan jubah dan celana dari songket dengan warna senada, hiasan dada, dan mahkota yang agung.",
+    upacaraadat: "Tradisi & Festival",
     penjelasanupacaraadat:
-      "Sedekah Rame: Upacara syukuran yang sering dilakukan oleh masyarakat Palembang. Tradisi ini melibatkan doa bersama dan jamuan makan besar yang terbuka untuk semua orang. Upacara ini mencerminkan nilai-nilai kebersamaan dan berbagi rezeki dengan sesama.",
+      "Perlombaan Perahu Bidar: Sebuah tradisi dan festival tahunan yang sangat meriah di Sungai Musi, Palembang. Perahu bidar adalah perahu panjang yang didayung oleh puluhan orang. Perlombaan ini biasanya diadakan untuk merayakan hari-hari besar dan menjadi tontonan yang menarik, mencerminkan semangat dan budaya bahari masyarakat Palembang.",
   },
   {
     id: "ID-ST",
     nama: "SULAWESI TENGAH",
     heroimg: "/images/provinsi/SulawesiTengah.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/baju_nggembe.png",
+    upacara: "/images/upacara/ritual_adat_balia.png",
+    kerajinan: "/images/kerajinan/kerajinan_kulit_kayu_sulteng.png",
+    makanan: "/images/makanan/uta_kelo.png",
+    kesenian: "/images/kesenian/tari_modero.png",
     deskripsi:
       "Sulawesi Tengah adalah sebuah provinsi yang membentang di bagian tengah Pulau Sulawesi. Dikenal dengan keindahan alam yang beragam, mulai dari pegunungan, lembah, hingga teluk dan perairan yang kaya biota laut. Provinsi ini dihuni oleh beragam suku bangsa, seperti Kaili, Pamona, dan Toli-Toli, yang memiliki tradisi dan adat istiadat yang unik.",
     juduldesk1: "Perpaduan Budaya dan Alam yang Harmonis",
@@ -1095,66 +1059,66 @@ export const DataProvinsi = [
     id: "ID-SU",
     nama: "SUMATERA UTARA",
     heroimg: "/images/provinsi/SumateraUtara.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_adat_ulos.png",
+    upacara: "/images/upacara/upacara_mangalahat_horbo.png",
+    kerajinan: "/images/kerajinan/kain_ulos.png",
+    makanan: "/images/makanan/arsik_ikan_mas.png",
+    kesenian: "/images/kesenian/tari_tor_tor.png",
     deskripsi:
-      "Sumatera Utara adalah sebuah provinsi di bagian utara Pulau Sumatera yang memiliki kekayaan alam dan budaya yang sangat beragam. Provinsi ini dikenal sebagai tanah kelahiran suku Batak dengan Danau Toba yang ikonik. Keberagaman etnis, seperti Batak, Melayu, Nias, dan Karo, menciptakan mozaik budaya yang kaya dan unik.",
+      "Sumatera Utara adalah provinsi di utara Pulau Sumatera yang kaya akan keindahan alam dan keragaman budaya. Dikenal sebagai 'Tanah Batak', provinsi ini menjadi rumah bagi Danau Toba yang megah dan berbagai etnis seperti Batak, Melayu, Nias, dan Karo, yang bersama-sama menciptakan mozaik budaya yang dinamis dan unik.",
     juduldesk1: "Danau Toba dan Kearifan Lokal Batak",
     penjelasan1:
-      "Danau Toba, danau vulkanik terbesar di dunia, menjadi jantung provinsi Sumatera Utara. Di tengah danau terdapat Pulau Samosir yang merupakan pusat kebudayaan Batak Toba. Kehidupan masyarakat di sekitar danau sangat dipengaruhi oleh tradisi dan nilai-nilai suku Batak yang kuat.",
+      "Danau Toba, danau vulkanik terbesar di dunia, merupakan ikon dan jantung provinsi Sumatera Utara. Di tengahnya terdapat Pulau Samosir, yang diyakini sebagai pusat peradaban dan kebudayaan suku Batak Toba. Kehidupan masyarakat di sekitarnya sangat erat dengan tradisi, adat, dan nilai-nilai luhur yang diwariskan turun-temurun.",
     adatistiadat: "Adat Istiadat dan Nilai Lokal",
     penjelasanadatistiadat:
-      "Masyarakat Batak memiliki sistem kekerabatan patrilineal yang sangat kuat, di mana marga atau nama keluarga diturunkan dari ayah ke anak. Nilai-nilai musyawarah, persatuan, dan penghormatan terhadap leluhur (dikenal sebagai `Dalihan Na Tolu`) sangat dijunjung tinggi dalam kehidupan bermasyarakat.",
+      "Masyarakat Batak memegang teguh sistem kekerabatan patrilineal, di mana marga (nama keluarga) diwariskan dari garis ayah. Falsafah hidup 'Dalihan Na Tolu' (Tiga Tungku Sejarangan) menjadi pilar utama dalam interaksi sosial, yang menekankan pentingnya musyawarah, persatuan, dan penghormatan antarkerabat.",
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
-      "Tari Tor-Tor: Tarian tradisional dari suku Batak. Tarian ini biasanya ditarikan dalam upacara adat dan ritual penting. Gerakannya sederhana namun penuh makna, diiringi oleh musik `gondang` yang sakral. Tari Tor-Tor melambangkan rasa syukur, kegembiraan, dan penghormatan kepada leluhur.",
+      "Tari Tor-Tor: Sebuah tarian seremonial dari suku Batak yang diiringi oleh musik gondang. Gerakannya yang ritmis dan penuh makna sering ditampilkan dalam upacara adat penting, melambangkan doa, harapan, dan penghormatan kepada leluhur.\nSigale-gale: Pertunjukan boneka kayu seukuran manusia yang dapat menari. Awalnya digunakan dalam upacara pemakaman bagi orang yang meninggal tanpa keturunan, kini Sigale-gale menjadi pertunjukan seni budaya yang menarik bagi wisatawan.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Kain Ulos: Kain tenun tradisional Batak yang memiliki makna filosofis yang mendalam. Ulos tidak hanya berfungsi sebagai pakaian adat, tetapi juga digunakan sebagai simbol status, penghormatan, dan identitas dalam upacara-upacara adat. Setiap motif dan warna memiliki arti yang berbeda.",
+      "Kain Ulos: Kain tenun tradisional Batak yang sarat dengan nilai filosofis. Ulos bukan sekadar pakaian, melainkan simbol status, restu, kasih sayang, dan identitas dalam setiap siklus kehidupan, mulai dari kelahiran, pernikahan, hingga kematian. Setiap motif dan warnanya memiliki makna dan peruntukan yang spesifik.",
     kulinerkhas: "Kuliner Khas Sumatera Utara",
     penjelasankulinerkhas:
-      "Saksang: Masakan daging babi atau anjing yang dimasak dengan bumbu khas Batak, dicampur dengan darah hewan tersebut. Hidangan ini sering disajikan dalam upacara adat, terutama pada perayaan-perayaan penting. Saksang memiliki cita rasa yang kaya, pedas, dan khas.",
+      "Arsik Ikan Mas: Hidangan ikan mas yang dimasak dengan bumbu kuning khas Batak menggunakan rempah andaliman yang memberikan sensasi getir di lidah. Masakan ini wajib hadir dalam upacara adat.\nMie Gomak: Sering disebut 'spageti Batak', mie lidi ini disajikan dengan kuah santan kental yang kaya rempah, terkadang dicampur dengan saus kacang.\nBika Ambon: Meskipun namanya 'Ambon', kue dengan tekstur bersarang yang khas ini adalah oleh-oleh ikonik dari Medan, ibu kota Sumatera Utara.",
     pakaianadat: "Pakaian Adat Sumatera Utara",
     penjelasanpakaianadat:
-      "Pakaian adat suku Batak adalah Ulos. Pria mengenakan Ulos yang dililitkan di pinggang dan bahu, sementara wanita mengenakan Ulos sebagai bawahan yang dipadukan dengan atasan berwarna cerah. Ulos juga berfungsi sebagai selendang atau penutup kepala dalam berbagai upacara.",
+      "Secara umum, Ulos merupakan pakaian adat utama bagi suku-suku Batak. Pria mengenakannya sebagai lilitan di pinggang (abit) dan selendang (hande-hande), sementara wanita menggunakannya sebagai sarung dan selendang. Suku lain juga memiliki pakaian khas, seperti suku Karo dengan 'Uis Gara' yang didominasi warna merah dan hitam, serta suku Melayu dengan 'Baju Kurung' yang anggun.",
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Mangalahat Horbo: Upacara adat suku Batak yang melibatkan penyembelihan kerbau sebagai bagian dari ritual pernikahan atau upacara kematian. Upacara ini melambangkan penghormatan terhadap arwah leluhur dan permohonan restu agar segala urusan berjalan lancar.",
+      "Sumatera Utara kaya akan upacara adat yang menandai siklus kehidupan. Upacara pernikahan dan kematian merupakan dua ritual terbesar yang melibatkan seluruh kerabat. Salah satu upacara yang terkenal adalah 'Mangalahat Horbo' (menyembelih kerbau), sebuah ritual besar yang diadakan untuk perayaan penting atau sebagai bentuk penghormatan tertinggi, yang melambangkan kemakmuran dan permohonan restu dari leluhur.",
   },
   {
     id: "ID-YO",
     nama: "DAERAH ISTIMEWA YOGYAKARTA",
     heroimg: "/images/provinsi/Yogyakarta.png",
-    pakaian: "/images/pakaian/",
-    upacara: "/images/upacara/",
-    kerajinan: "/images/kerajinan",
-    makanan: "/images/makanan/",
-    kesenian: "/images/kesenian/",
+    pakaian: "/images/pakaian/pakaian_surjan.png",
+    upacara: "/images/upacara/upacara_sekaten.png",
+    kerajinan: "/images/kerajinan/batik_yogyakarta.png",
+    makanan: "/images/makanan/gudeg.png",
+    kesenian: "/images/kesenian/wayang_kulit.png",
     deskripsi:
-      'Daerah Istimewa Yogyakarta adalah salah satu provinsi di Indonesia yang memiliki status istimewa dan merupakan pusat kebudayaan Jawa yang kental. Dikenal dengan sebutan "Kota Pelajar" dan "Kota Budaya," Yogyakarta memiliki peninggalan sejarah dan tradisi yang masih sangat dilestarikan, terutama yang berpusat di Keraton Ngayogyakarta Hadiningrat.',
-    juduldesk1: "Pusat Kebudayaan Jawa yang Sakral",
+      'Daerah Istimewa Yogyakarta adalah provinsi berstatus istimewa di Indonesia yang menjadi jantung peradaban dan kebudayaan Jawa. Dikenal sebagai "Kota Budaya" dan "Kota Pelajar", Yogyakarta melestarikan warisan tradisi luhur yang berpusat pada Keraton Ngayogyakarta Hadiningrat sebagai penjaga kebudayaannya.',
+    juduldesk1: "Pusat Kebudayaan Jawa yang Adiluhung",
     penjelasan1:
-      "Yogyakarta adalah cerminan dari budaya Jawa yang adiluhung (luhur dan mulia). Kehidupan di sini dipengaruhi oleh keraton, yang berperan sebagai penjaga tradisi dan spiritualitas. Nilai-nilai kesopanan, harmoni, dan filosofi Jawa seperti `rasa` dan `tata krama` sangat dijunjung tinggi oleh masyarakatnya.",
-    adatistiadat: "Adat Istiadat dan Nilai Lokal",
+      "Yogyakarta adalah cerminan budaya Jawa yang adiluhung (luhur dan agung). Kehidupan masyarakatnya sangat dipengaruhi oleh filosofi Keraton yang berperan sebagai penjaga tradisi. Nilai-nilai seperti kesopanan, kerendahan hati, harmoni, dan 'tepa selira' (tenggang rasa) dijunjung tinggi dalam kehidupan sehari-hari.",
+    adatistiadat: "Adat Istiadat dan Siklus Hidup",
     penjelasanadatistiadat:
-      'Masyarakat Yogyakarta sangat memegang teguh adat istiadat, terutama dalam upacara daur hidup seperti pernikahan dan kelahiran. Salah satu tradisi yang khas adalah "Pahargyan Temanten" atau upacara pernikahan adat Jawa, yang penuh dengan simbolisme dan prosesi yang sakral, melambangkan perjalanan hidup berumah tangga.',
+      "Masyarakat Yogyakarta memegang teguh adat istiadat dalam setiap tahapan daur hidup, mulai dari kelahiran (upacara Tedhak Siten), pernikahan (Pahargyan Temanten), hingga kematian. Upacara pernikahan adat Yogyakarta, misalnya, sarat dengan prosesi simbolis yang sakral, seperti siraman dan midodareni, yang mengandung doa dan harapan bagi kedua mempelai.",
     keseniantradisional: "Kesenian Tradisional",
     penjelasankesenian:
-      "Tari Bedhaya: Tarian sakral dan klasik yang berasal dari lingkungan keraton. Tarian ini ditarikan oleh sekelompok penari wanita dengan gerakan yang sangat lembut, lambat, dan penuh makna. Tari Bedhaya melambangkan hubungan antara raja dan rakyatnya, serta kekuatan spiritual yang luhur.",
+      "Wayang Kulit: Seni pertunjukan boneka kulit yang dimainkan oleh seorang Dalang, diiringi musik gamelan. Lakonnya sering kali diambil dari wiracarita Ramayana dan Mahabharata yang mengandung ajaran moral dan filosofi hidup.\nTari Bedhaya: Tarian sakral keraton yang ditarikan oleh sembilan penari wanita. Gerakannya yang anggun, lambat, dan simetris memiliki makna spiritual yang mendalam, melambangkan hubungan antara Raja dengan sang pencipta.\nGamelan: Ansambel musik tradisional yang menjadi jiwa dari berbagai pertunjukan seni di Jawa. Alunan suaranya yang harmonis menciptakan suasana yang magis dan agung.",
     kerajinantangan: "Kerajinan Tangan",
     penjelasankerajinantangan:
-      "Batik: Yogyakarta adalah salah satu sentra batik terpenting di Indonesia. Batik tulis khas Yogyakarta memiliki motif-motif tradisional yang kaya akan makna filosofis. Kerajinan ini tidak hanya sebagai kain, tetapi juga sebagai medium ekspresi budaya dan spiritualitas.",
+      "Batik Tulis: Yogyakarta adalah salah satu pusat utama batik tulis klasik. Motifnya, seperti Parang dan Kawung, memiliki makna filosofis yang mendalam dan pada zaman dahulu menunjukkan status sosial pemakainya.\nKerajinan Perak Kotagede: Sejak zaman Kerajaan Mataram Islam, Kotagede telah dikenal sebagai pusat kerajinan perak. Para pengrajinnya menghasilkan perhiasan dan hiasan perak dengan teknik filigri (kerawang) yang halus dan detail.",
     kulinerkhas: "Kuliner Khas Yogyakarta",
     penjelasankulinerkhas:
-      "Gudeg: Makanan khas yang terbuat dari nangka muda yang dimasak dengan santan dan gula merah selama berjam-jam. Gudeg memiliki cita rasa manis dan gurih, biasanya disajikan dengan nasi, ayam, telur, dan krecek (kerupuk kulit) yang dimasak sambal.",
+      "Gudeg: Ikon kuliner Yogyakarta yang terbuat dari nangka muda, dimasak berjam-jam dengan santan dan gula aren hingga empuk. Rasanya yang manis legit khas, biasa disajikan dengan nasi hangat, krecek, telur, dan ayam.\nBakpia: Oleh-oleh wajib dari Yogyakarta, berupa kue pastri bundar dengan berbagai isian, yang paling klasik adalah isian kacang hijau.\nSate Klatak: Sate kambing unik yang hanya dibumbui garam dan ditusuk menggunakan jeruji sepeda. Pembakarannya di atas bara api terbuka menghasilkan aroma dan cita rasa yang khas.",
     pakaianadat: "Pakaian Adat Yogyakarta",
     penjelasanpakaianadat:
-      'Pakaian adat pria Yogyakarta adalah "Jawi Jangkep," yang terdiri dari beskap, kain batik, dan blangkon (penutup kepala). Wanita mengenakan "Kebaya" yang dipadukan dengan kain batik dan sanggul. Pakaian ini mencerminkan keanggunan, wibawa, dan status sosial.',
+      'Pakaian adat pria adalah "Surjan", yaitu kemeja lengan panjang dengan motif lurik (garis-garis) yang dipadukan dengan kain batik dan blangkon. Pakaian ini melambangkan kesederhanaan dan filosofi hidup orang Jawa. Wanita mengenakan "Kebaya" berbahan beludru atau brokat dengan kain batik, yang mencerminkan keanggunan dan kehalusan.',
     upacaraadat: "Upacara Adat",
     penjelasanupacaraadat:
-      "Sekaten: Perayaan tahunan untuk memperingati hari kelahiran Nabi Muhammad SAW. Acara ini berlangsung selama seminggu dengan puncaknya Grebeg Maulud, di mana gunungan (tumpukan hasil bumi) diarak dari Keraton menuju Masjid Gede. Upacara ini melambangkan kemakmuran dan rasa syukur.",
+      "Sekaten dan Grebeg Maulud: Perayaan tahunan untuk memperingati kelahiran Nabi Muhammad SAW. Acara puncak adalah 'Grebeg', di mana gunungan (tumpukan hasil bumi) diarak dari Keraton untuk diperebutkan oleh masyarakat sebagai simbol berkah dan kemakmuran.\nUpacara Labuhan: Ritual persembahan dari pihak Keraton yang dilakukan di tempat-tempat sakral seperti Pantai Parangkusumo dan Gunung Merapi. Upacara ini merupakan wujud rasa syukur Sultan kepada Tuhan Yang Maha Esa.",
   },
 ];
