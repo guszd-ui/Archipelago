@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
+import { RotateCw, Search } from "lucide-react";
 
 const PetaIndonesia = () => {
   const Provinsi = [
@@ -239,53 +240,104 @@ const PetaIndonesia = () => {
     y: number;
     nama: string;
   } | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [highlightedId, setHighlightedId] = useState<string | null>(null);
 
   const router = useRouter();
 
-  return (
-    <div className=" w-screen h-screen bg-[url('/images/Lautan.png')] bg-center bg-cover">
-      {/* Tooltip */}
-      {hovered && (
-        <div
-          className="absolute px-3 py-1 bg-black text-white text-sm rounded-lg pointer-events-none"
-          style={{
-            top: hovered.y,
-            left: hovered.x,
-            transform: "translate(-50%, -120%)",
-          }}
-        >
-          {hovered.nama}
+  const filteredProvinsi = useMemo(() => {
+    if (!searchTerm) {
+      return Provinsi;
+    }
+    return Provinsi.filter((p) =>
+      p.nama.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm, Provinsi]);
+
+  const SearchAndListPanel = () => (
+    <>
+      <div className="p-2 md:p-3 border-b border-gray-200 md:border-gray-300 flex-shrink-0">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none" />
+          <input
+            type="text"
+            placeholder="Cari provinsi..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full pl-10 pr-4 py-2 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
-      )}
-      <svg
-        className="w-full h-full"
-        viewBox="90 -10 600 420"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        {Provinsi.map((region) => (
-          <path
-            key={region.id}
-            d={region.pathData}
-            id={region.id}
-            className="cursor-pointer transition-colors duration-200 hover:fill-amber-400"
-            fill="#e5e7eb"
-            stroke="#374151"
-            strokeWidth={0.5}
-            onClick={() => router.push(`/provinsi/${region.id}`)}
-            onMouseMove={(e) => {
-              setHovered({
-                x: e.clientX,
-                y: e.clientY,
-                nama: region.nama,
-              });
+      </div>
+      <div className="flex-grow overflow-y-auto">
+        {filteredProvinsi.length > 0 ? (
+          filteredProvinsi.map((region) => (
+            <button
+              key={region.id}
+              onClick={() => router.push(`/provinsi/${region.id}`)}
+              onMouseEnter={() => setHighlightedId(region.id)}
+              onMouseLeave={() => setHighlightedId(null)}
+              className="w-full text-left px-4 py-2.5 hover:bg-blue-100 transition-colors duration-150"
+            >
+              {region.nama}
+            </button>
+          ))
+        ) : (
+          <p className="px-4 py-3 text-gray-500">Tidak ditemukan.</p>
+        )}
+      </div>
+    </>
+  );
+
+  return (
+    <div className="w-screen h-screen flex flex-col md:flex-row">
+      <div className="relative w-full h-[45vh] md:h-full md:flex-1 bg-[url('/images/Lautan.png')] bg-center bg-cover">
+        {hovered && (
+          <div
+            className="hidden md:block absolute px-3 py-1 bg-black text-white text-sm rounded-lg pointer-events-none z-20"
+            style={{
+              top: hovered.y,
+              left: hovered.x,
+              transform: "translate(-50%, -120%)",
             }}
-            onMouseLeave={() => setHovered(null)}
           >
-            <title>{region.nama}</title>
-          </path>
-        ))}
-      </svg>
+            {hovered.nama}
+          </div>
+        )}
+        <svg
+          className="w-full h-full"
+          viewBox="90 -10 600 420"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          {Provinsi.map((region) => (
+            <path
+              key={region.id}
+              d={region.pathData}
+              id={region.id}
+              className="cursor-pointer transition-colors duration-200 hover:fill-amber-400"
+              fill={highlightedId === region.id ? "#f59e0b" : "#e5e7eb"}
+              stroke="#374151"
+              strokeWidth={0.5}
+              onClick={() => router.push(`/provinsi/${region.id}`)}
+              onMouseMove={(e) => {
+                setHovered({
+                  x: e.clientX,
+                  y: e.clientY,
+                  nama: region.nama,
+                });
+              }}
+              onMouseLeave={() => {
+                setHovered(null);
+              }}
+            >
+              <title>{region.nama}</title>
+            </path>
+          ))}
+        </svg>
+      </div>
+      <div className="w-full md:w-72 flex-1 md:flex-initial flex flex-col bg-white shadow-lg overflow-hidden">
+        <SearchAndListPanel />
+      </div>
     </div>
   );
 };
