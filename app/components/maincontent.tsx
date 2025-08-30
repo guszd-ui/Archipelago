@@ -1,157 +1,83 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+
+// Data untuk konten kita
+const contentData = [
+  {
+    id: "Budaya",
+    title: "BUDAYA & TRADISI",
+    description:
+      "Jelajahi warisan budaya Nusantara—tari, musik, ritual, hingga kerajinan—yang membentuk jati diri bangsa dari Sabang sampai Merauke.",
+    link: "/budaya-dan-tradisi",
+    buttonText: "Jelajahi",
+    imageSrc: "/images/bg_tradisi.png",
+  },
+  {
+    id: "Sejarah",
+    title: "SEJARAH INDONESIA",
+    description:
+      "Mari eksplor sejarah Indonesia—dari kerajaan-kerajaan besar, masa kolonial, pergerakan nasional, hingga era kemerdekaan dan seterusnya.",
+    link: "/sejarahindonesia",
+    buttonText: "Buka Halaman",
+    imageSrc: "/images/bg_sejarah.png",
+  },
+  {
+    id: "Bahasa",
+    title: "BAHASA INDONESIA",
+    description:
+      "Pelajari perkembangan Bahasa Indonesia—dari akar bahasa Melayu, Sumpah Pemuda 1928, hingga pembakuan ejaan modern dan perannya sebagai bahasa persatuan.",
+    link: "/bahasa-indonesia",
+    buttonText: "Pelajari",
+    imageSrc: "/images/bg_bahasa.png",
+  },
+];
 
 const MainContent = () => {
   return (
-    <main className="min-h-screen w-full scroll-smooth overflow-x-hidden">
-      <section
-        id="Budaya"
-        className="bg-[rgb(154,166,178)] text-gray-800 h-screen overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-8 md:py-0 h-full">
-          <motion.div
-            className="order-1 w-full"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            <div className="w-full max-w-xl bg-white rounded-xl shadow-lg mx-auto md:ml-16 p-6 hover:scale-[1.02] transition-transform duration-300">
-              <h1 className="text-2xl font-bold mb-3">BUDAYA &amp; TRADISI</h1>
-              <p className="text-gray-700 mb-5">
-                Jelajahi warisan budaya Nusantara—tari, musik, ritual, hingga
-                kerajinan—yang membentuk jati diri bangsa dari Sabang sampai
-                Merauke.
-              </p>
-              <Link
-                href="/budaya-dan-tradisi"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#E64553] text-white font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E64553]"
-                aria-label="Menuju halaman Budaya dan Tradisi"
-              >
-                Jelajahi
-              </Link>
-            </div>
-          </motion.div>
+    <main className="bg-gray-50 min-h-screen py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {contentData.map((item) => (
+            // Menambahkan margin-top agar ada ruang untuk gambar yang keluar
+            <div key={item.id} className="mt-12">
+              <div className="relative flex flex-col rounded-lg bg-white text-surface shadow-lg">
+                {/* 1. Wrapper gambar diangkat ke atas dengan margin negatif */}
+                <div className="relative -mt-12 mx-auto w-[calc(100%-3rem)]">
+                  <Link href={item.link} className="block">
+                    {/* 2. Gambar diberi shadow dan border radius penuh */}
+                    <Image
+                      className="rounded-lg object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+                      src={item.imageSrc}
+                      alt={`Gambar untuk ${item.title}`}
+                      width={500}
+                      height={300}
+                    />
+                  </Link>
+                </div>
 
-          <motion.div
-            className="order-2 w-full justify-self-center md:justify-self-end"
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
-          >
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg h-[min(44vh,420px)] sm:h-[min(52vh,520px)] md:h-[min(64vh,600px)] overflow-hidden rounded-lg">
-              <Image
-                src="/images/Budaya.png"
-                alt="Ilustrasi budaya dan tradisi Indonesia"
-                fill
-                sizes="(min-width: 768px) 40vw, 80vw"
-                className="object-contain hover:scale-105 transition-transform duration-300 origin-bottom will-change-transform"
-                priority
-              />
+                {/* 3. Konten teks diberi padding atas tambahan */}
+                <div className="p-6 pt-8 flex flex-col flex-grow text-center">
+                  <h5 className="mb-2 text-xl font-bold leading-tight text-gray-800">
+                    {item.title}
+                  </h5>
+                  <p className="mb-4 text-base text-gray-600 flex-grow">
+                    {item.description}
+                  </p>
+                  <div className="mt-auto">
+                    <Link
+                      href={item.link}
+                      className="inline-block bg-[#E64553] text-white font-semibold px-6 py-2.5 rounded-md hover:bg-red-700 transition-colors"
+                    >
+                      {item.buttonText}
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
-          </motion.div>
+          ))}
         </div>
-      </section>
-      <section
-        id="Sejarah"
-        className="bg-[#EFF1F5] text-gray-800 h-screen overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-8 md:py-0 h-full">
-          <motion.div
-            className="order-1 w-full"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            <div className="w-full max-w-xl bg-[#E64553] text-white rounded-xl shadow-lg mx-auto md:ml-16 p-6 hover:scale-[1.02] transition-transform duration-300">
-              <h1 className="text-2xl font-bold mb-3">SEJARAH INDONESIA</h1>
-              <p className="opacity-95 mb-5">
-                Mari eksplor sejarah Indonesia—dari kerajaan-kerajaan besar,
-                masa kolonial, pergerakan nasional, hingga era kemerdekaan dan
-                seterusnya.
-              </p>
-              <Link
-                href="/sejarahindonesia"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white text-[#E64553] font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E64553]"
-                aria-label="Menuju halaman Sejarah Indonesia"
-              >
-                Buka Halaman
-              </Link>
-            </div>
-          </motion.div>
-          <motion.div
-            className="order-2 w-full justify-self-center md:justify-self-end"
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
-          >
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg h-[min(44vh,420px)] sm:h-[min(52vh,520px)] md:h-[min(64vh,600px)] overflow-hidden rounded-lg">
-              <Image
-                src="/images/Sejarah.png"
-                alt="Ilustrasi perjalanan sejarah Indonesia"
-                fill
-                sizes="(min-width: 768px) 40vw, 80vw"
-                className="object-contain hover:scale-105 transition-transform duration-300 origin-bottom will-change-transform"
-                loading="lazy"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </section>
-      <section
-        id="Bahasa"
-        className="bg-[#E64553] text-gray-800 h-screen overflow-hidden"
-      >
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-8 md:py-0 h-full">
-          {/* Card */}
-          <motion.div
-            className="order-1 w-full"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            <div className="w-full max-w-xl bg-white rounded-xl shadow-lg mx-auto md:ml-16 p-6 hover:scale-[1.02] transition-transform duration-300">
-              <h1 className="text-2xl font-bold mb-3">BAHASA INDONESIA</h1>
-              <p className="text-gray-700 mb-5">
-                Pelajari perkembangan Bahasa Indonesia—dari akar bahasa Melayu,
-                Sumpah Pemuda 1928, hingga pembakuan ejaan modern dan perannya
-                sebagai bahasa persatuan.
-              </p>
-              <Link
-                href="/bahasa-indonesia"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#E64553] text-white font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E64553]"
-                aria-label="Menuju halaman Bahasa Indonesia"
-              >
-                Pelajari
-              </Link>
-            </div>
-          </motion.div>
-          <motion.div
-            className="order-2 w-full justify-self-center md:justify-self-end"
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
-          >
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg h-[min(44vh,420px)] sm:h-[min(52vh,520px)] md:h-[min(64vh,600px)] overflow-hidden rounded-lg">
-              <Image
-                src="/images/Bahasa.png"
-                alt="Ilustrasi Bahasa Indonesia sebagai bahasa persatuan"
-                fill
-                sizes="(min-width: 768px) 40vw, 80vw"
-                className="object-contain hover:scale-105 transition-transform duration-300 origin-bottom will-change-transform"
-                loading="lazy"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      </div>
     </main>
   );
 };
