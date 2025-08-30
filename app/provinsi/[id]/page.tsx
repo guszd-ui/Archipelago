@@ -1,23 +1,18 @@
 import { notFound } from "next/navigation";
 import { DataProvinsi } from "@/app/data/dataprovinsi";
-import Image from "next/image";
-import { div } from "motion/react-client";
 
-// Fungsi ini memberitahu Next.js semua kemungkinan ID yang ada,
-// yang dapat menyelesaikan masalah build pada halaman dinamis.
 export async function generateStaticParams() {
   return DataProvinsi.map((provinsi) => ({
     id: provinsi.id,
   }));
 }
 
-// Menggunakan kembali interface dan signature fungsi asli Anda.
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }
 
 export default async function Provinsi({ params }: PageProps) {
-  // Menggunakan kembali cara Anda yang benar untuk mendapatkan id.
   const { id } = await params;
 
   const data = DataProvinsi.find((item) => item.id === id);
@@ -28,115 +23,127 @@ export default async function Provinsi({ params }: PageProps) {
 
   return (
     <div className="p-10 bg-[rgb(238,238,238)] h-full w-screen flex flex-col scroll-smooth">
-      <div className="w-screen h-auto flex justify-center">
-        <h1 className="text-2xl font-bold text-black absolute rounded-sm bg-[rgb(238,238,238)] items-center p-4">
-          Provinsi: {id} ({data.nama})
-        </h1>
-      </div>
-
-      <div className="w-full h-auto flex justify-center">
-        <Image
-          className="rounded-sm w-5/6 h-5/6"
-          alt={data.nama}
+      <div className="md:bg-[url('/images/bg_heroimage.png')] bg-cover object-fill flex flex-col bg-center border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-screen hover:bg-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 md:h-[60vh]">
+        <img
+          className="object-cover w-full rounded-t-lg h-[60vh] md:h-full md:w-2xl md:rounded-none md:rounded-s-lg md:portrait:h-64"
           src={data.heroimg}
-          width={3140}
-          height={2280}
+          alt={data.nama}
         />
+        <div className="flex flex-col p-4 leading-normal">
+          <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-5">
+            ({data.nama})
+          </h5>
+          <p className="mb-1 font-normal text-gray-700 dark:text-gray-400 md:text-sm">
+            {data.deskripsi}
+          </p>
+        </div>
       </div>
-      <div className="flex justify-center p-4 flex-col gap-5">
-        <div className="bg-[rgb(215,35,35)] rounded-md p-4 shadow-lg hover:scale-105 transition-transform duration-200 origin-bottom">
-          <p className="mt-2 text-white text-center">{data.deskripsi}</p>
-        </div>
-        <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-          <p className="font-bold">{data.juduldesk1}</p>
-          <div className="bg-white shadow-lg p-3 rounded-sm">
-            <p className="text-black">{data.penjelasan1}</p>
-          </div>
-        </div>
-        <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-          <p className="font-bold">{data.adatistiadat}</p>
-          <div className="bg-white shadow-lg p-3 rounded-sm">
-            <p className="text-black">{data.penjelasanadatistiadat}</p>
-          </div>
-        </div>
-        <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-          <p className="font-bold">{data.keseniantradisional}</p>
-          <div className="bg-white shadow-lg p-3 rounded-sm">
-            <p className="text-black">{data.penjelasankesenian}</p>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              className="rounded-sm m-2 h-auto w-[70vh] items-center shadow-2xl outline-2 outline-blue-50 hover:scale-101 hover:outline-1 hover:outline-amber-50 origin-bottom transition-transform duration-300"
-              alt={data.nama}
+      <div className="bg-[url('/images/bg_teks.png')] bg-cover object-fill mt-20 block max-w-screen p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:scale-102 duration-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {data.juduldesk1}
+        </h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">
+          {data.penjelasan1}
+        </p>
+      </div>
+      <div className="bg-[url('/images/bg_teks.png')] bg-cover mt-10 block max-w-screen p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:scale-102 duration-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {data.adatistiadat}
+        </h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">
+          {data.penjelasanadatistiadat}
+        </p>
+      </div>
+      <div className="mt-10 flex flex-col md:flex-row gap-8 justify-evenly items-center md:items-stretch">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-300">
+          <a href="#">
+            <img
+              className="rounded-t-lg w-full h-48 object-fill"
+              alt={data.pakaianadat}
               src={data.kesenian!}
-              width={1400}
-              height={800}
             />
+          </a>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {data.keseniantradisional}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {data.penjelasankesenian}
+            </p>
           </div>
         </div>
-        <div className="flex justify-between gap-10">
-          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200  origin-bottom">
-            <p className="font-bold">{data.kerajinantangan}</p>
-            <div className="bg-white shadow-lg p-3 rounded-sm">
-              <p className="text-black">{data.penjelasankerajinantangan}</p>
-            </div>
-            <Image
-              className="hover:outline-1 hover:outline-amber-50 rounded-sm h-[50vh] w-full items-center shadow-2xl outline-2 outline-blue-50 hover:scale-105 origin-bottom-left transition-transform duration-300"
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-300">
+          <a href="#">
+            <img
+              className="rounded-t-lg w-full h-48 object-fill"
               alt={data.nama}
-              src={data.kerajinan!}
-              width={700}
-              height={400}
+              src={data.kerajinan}
             />
-          </div>
-          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-            <p className="font-bold">{data.kulinerkhas}</p>
-            <div className="bg-white shadow-lg p-3 rounded-sm">
-              <p className="text-black">{data.penjelasankulinerkhas}</p>
-            </div>
-            <div className="flex justify-end">
-              <Image
-                className="rounded-sm h-[50vh] w-full items-center hover:outline-1 hover:outline-amber-50 shadow-2xl outline-2 outline-blue-50 hover:scale-105 hover:justify-start origin-bottom-right transition-transform duration-300"
-                alt={data.nama}
-                src={data.makanan!}
-                width={700}
-                height={400}
-              />
-            </div>
+          </a>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {data.kerajinantangan}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {data.penjelasankerajinantangan}
+            </p>
           </div>
         </div>
-        <div className="flex gap-10 justify-between">
-          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-            <p>{data.pakaianadat}</p>
-            <div className="bg-white shadow-lg p-3 rounded-sm">
-              <p className="text-black">{data.penjelasanpakaianadat}</p>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                className="rounded-sm m-2 h-auto w-[70vh] items-center shadow-2xl outline-2 outline-blue-50 hover:outline-1 hover:outline-amber-50 hover:scale-102 origin-bottom transition-transform duration-300"
-                alt={data.nama}
-                src={data.pakaian!}
-                width={1400}
-                height={800}
-              />
-            </div>
+      </div>
+      <div className="mt-10 flex flex-col md:flex-row gap-8 justify-evenly items-center md:items-stretch">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-300">
+          <a href="#">
+            <img
+              className="rounded-t-lg w-full h-48 object-fill"
+              alt={data.nama}
+              src={data.makanan}
+            />
+          </a>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {data.kulinerkhas}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {data.penjelasankulinerkhas}
+            </p>
           </div>
-          <div className="flex flex-col bg-[rgb(215,35,35)] rounded-md p-4 gap-3 shadow-lg hover:scale-102 transition-transform duration-200 origin-bottom">
-            <p>{data.upacaraadat}</p>
-            <div className="bg-white shadow-lg p-3 rounded-sm">
-              <p className="text-black">{data.penjelasanupacaraadat}</p>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                className="rounded-sm m-2 h-auto w-[70vh] items-center shadow-2xl outline-2 outline-blue-50 hover:scale-102 origin-bottom hover:outline-1 hover:outline-amber-50 transition-transform duration-300"
-                alt={data.nama}
-                src={data.upacara!}
-                width={1400}
-                height={800}
-              />
-            </div>
+        </div>
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-300">
+          <a href="#">
+            <img
+              className="rounded-t-lg w-full h-48 object-fill"
+              alt={data.pakaianadat}
+              src={data.pakaian!}
+            />
+          </a>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {data.pakaianadat}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {data.penjelasanpakaianadat}
+            </p>
+          </div>
+        </div>
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 duration-300">
+          <a href="#">
+            <img
+              className="rounded-t-lg w-full h-48 object-fill"
+              alt={data.nama}
+              src={data.upacara}
+            />
+          </a>
+          <div className="p-5">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {data.upacaraadat}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {data.penjelasanupacaraadat}
+            </p>
           </div>
         </div>
       </div>
     </div>
   );
 }
+

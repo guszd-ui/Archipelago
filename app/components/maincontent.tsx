@@ -8,7 +8,7 @@ const MainContent = () => {
     <main className="min-h-screen w-full scroll-smooth overflow-x-hidden">
       <section
         id="Budaya"
-        className="bg-[#E64553] text-gray-800 h-screen overflow-hidden"
+        className="bg-[rgb(154,166,178)] text-gray-800 h-screen overflow-hidden"
       >
         <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-8 md:py-0 h-full">
           <motion.div
