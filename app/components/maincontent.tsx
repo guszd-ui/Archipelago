@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Data untuk konten kita
 const contentData = [
   {
     id: "Budaya",
@@ -39,13 +38,10 @@ const MainContent = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {contentData.map((item) => (
-            // Menambahkan margin-top agar ada ruang untuk gambar yang keluar
             <div key={item.id} className="mt-12">
               <div className="relative flex flex-col rounded-lg bg-white text-surface shadow-lg">
-                {/* 1. Wrapper gambar diangkat ke atas dengan margin negatif */}
                 <div className="relative -mt-12 mx-auto w-[calc(100%-3rem)]">
                   <Link href={item.link} className="block">
-                    {/* 2. Gambar diberi shadow dan border radius penuh */}
                     <Image
                       className="rounded-lg object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                       src={item.imageSrc}
@@ -55,8 +51,6 @@ const MainContent = () => {
                     />
                   </Link>
                 </div>
-
-                {/* 3. Konten teks diberi padding atas tambahan */}
                 <div className="p-6 pt-8 flex flex-col flex-grow text-center">
                   <h5 className="mb-2 text-xl font-bold leading-tight text-gray-800">
                     {item.title}
